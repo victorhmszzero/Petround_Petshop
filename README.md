@@ -1,4 +1,4 @@
-# Petshopproject
+# Petshop-project
 <p>Meu primeiro projeto como estudante da área foi a prototipação desse PetShop fictício! <br> Confira o PetRound! um site de adoção e venda de produto e serviços.</p>
  <img src="Assets/Logo By- Victorhmszzero.jpg" width ="45%">
 <p>
