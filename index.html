@@ -10,43 +10,121 @@
             margin: 0px;
             padding: 0px;
             font-weight: normal;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         }
+
 
         .item1 {
-            float:left;
+            width: 700px;
+            margin: 0px auto;
+            height: 230px;
         }
 
-        .item1 .cotainer_circle {
-            min-width: fit-content;
+        .item1 section {
+            float: left;
+            white-space: nowrap;
+            text-transform: uppercase;
+        }
+
+        .item1 .cont_circle {
+            width: 30%;
             padding: 50px 100px;
+            position: absolute;
+            max-width: 290px;
             transform: rotate(-5deg);
             background: rgb(139, 230, 79);
             border-radius: 50%;
-            color: black;
         }
 
-        .cotainer_circle h2 {
-            transform: rotate(5deg);
-            position: relative;
+        .item1 .cont_circle h2 {
+            left: -8px;
+            width: fit-content;
+            margin: 0px auto;
             bottom: 10px;
+            font-size: 25px;
+            position: relative;
+            transform: rotate(5deg);
         }
 
-        .cotainer_retangule {
-            padding: 10px 70px;
-            color: #fff;
-            background: rgb(13, 77, 13);
-            border-radius: 10px;
-            position: relative;
-            bottom: 40px;
+        .item1 .cont_retangule {
+            top: 100px;
             left: 70px;
             width: fit-content;
+            color: rgba(250, 250, 250, 0.829);
+            z-index: 2;
+            padding: 10px 55px;
+            position: relative;
+            background: rgb(13, 77, 13);
+            border-radius: 10px;
+            font-size: normal;
+        }
+
+        .item1 .cont_retangule span {
+            color: #fff;
+            letter-spacing: 4px;
+        }
+
+        .item1 .img1 {
+            margin-left: 320px;
+            width: 50%;
+            display: block;
+            z-index: 1;
+            bottom: 380px;
+            position: absolute;
+            max-width: 450px;
         }
 
 
+        .item2 section {
+            margin-top: 20px;
+        }
 
+        .item2 .cont_circle {
+            width: 20%;
+        }
 
-        img { max-width: 450px;}
+        .item2 .cont_circle h2 {
+            left: -18px;
+            bottom: 15px;
+        }
+        .item2 .cont_grupo{
+            position: relative;
 
+        }
+        .item2 .cont_icons {
+            position: absolute;
+
+            margin-top: 80px;
+            padding: 40px;
+            background: rgb(13, 77, 13);
+            border-radius: 50%;
+        }
+        .item2 .cont_icons.c1{
+            left: 40px;
+            top:0px;
+            background: rgb(98, 243, 98);
+        }
+
+        .item2 .cont_icons.c2{
+            left: 130px;
+            top:0px;
+            background: rgb(98, 243, 98);
+        }
+        
+        .item2 .cont_icons.c3{
+            left: 220px;
+            background: rgb(98, 243, 98);
+        }
+
+        .item2 .cont_icons.c4 {
+            left: 310px;
+        }
+        .img2{
+            padding:20px;
+            background-color: aqua;
+            width: 200px;
+            margin-left: auto;
+        }
     </style>
 </head>
 
@@ -63,21 +141,49 @@
             </ul>
         </nav>
         <main>
+
+            <section class="item1">
+                <section>
+                    <div class="cont_circle">
+                        <h2>Agora é a vez do<br> seu Pet! </h2>
+                    </div>
+                    <div class="cont_retangule">
+                        <h1>Bem vindo a <br><span>PETROUND</span></h1>
+                    </div>
+                </section>
+                <img class="img1" src="Assets/Home/DogAndCat.png">
+            </section>
+
+            <section class="item1 item2">
+                <section>
+                    <div class="cont_circle">
+                        <h2>Adote um Pet</h2>
+                    </div>
+                    <div class="cont_grupo">
+                        <div class="cont_icons c1"></div>
+                        <div class="cont_icons c2"></div>
+                        <div class="cont_icons c3"></div>
+                        <div class="cont_icons c4"></div>
+                    </div>
+                </section>
+                <div class="img2" ></div>
+            </section>
+
+
+
+
             <section>
-            <div class="item1">
-                <div class="cotainer_circle">
-                    <h2>AGORA É A VEZ DO<br> SEU PET </h2>
+                <div>
                 </div>
-                <div class="cotainer_retangule">
-                    <h1>BEM VINDO A <br>PETROUND</h1>
-                </div>
-            </div>
-            <img src="Assets/Home/DogAndCat.png">
-        </section>
+            </section>
+
+
+
+
+
 
 
         </main>
-        <div id="left">adsd</div><div id="right">adsd</div>
 
     </header>
 </body>
