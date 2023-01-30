@@ -1,155 +1,125 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.main1,
-.main2,
-.main3,
-.main4 {
+main > section {
     margin: 20px 40px;
 }
 
 .flex,
-.box1,
-.box2,
-.box3 {
+.carrosel,
+.flyers,
+.flyers .sectionLeft,
+.flyers .sectionRight {
     display: flex;
 }
 
-.box2 {
-    margin-left: auto;
+.carrosel,
+.flyers .sectionLeft,
+.flyers .sectionRight {
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
 }
 
-.box3 {
-    margin-right: auto;
-}
-
-
-.main2{
-    gap: 36px;
-}
-.box1, .box2, .box3{
-   box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.2);
-   border-radius: 20px;
-}
-
-.box1, .box2 p:last-child, .box3 p:last-child {
+/* No Responsive - PROVISORY*/
+.carrosel p:last-child,
+.flyers .sectionLeft p:last-child,
+.flyers .sectionRight p:last-child {
     white-space: nowrap;
 }
-.box2, .box3{
-    padding: 60px 60px 60px 20px;
-}
 
-.box1 img {
-    margin-right: auto;
-    width: 40%;
-    padding: 0px 50px 0px 0px ;
-}
-.relative{
-    position: relative;
-    border: 1px solid;
-    width: fit-content;
-}
-
-.box_discover {
-    padding: 50px;
-    background: green;
-    transform: rotate(-5deg);
-    padding: 20px 50px;
-    border-radius: 50%;
-    color: white;
-    text-align: center;
-    margin-left: auto;
-    font-size: 18px;
+.box {
     width: 57%;
-    margin: auto 0px auto  80px ;
-    height: fit-content;
-    position:relative;
+    color: white;
+    margin: auto 0px auto 80px;
+    padding: 20px 50px;
+    position: relative;
+    transform: rotate(-5deg);
+    background: green;
+    text-align: center;
+    border-radius: 50%;
 }
 
-
-
-.box2 .box_discover , .box3 .box_discover{
-    padding-top: 30px;
-    padding-bottom: 60px;
-}
-
-
-
-
-
-
-.box_discover p {
+.box p {
     margin: 20px 0px 0px;
     transform: rotate(5deg);
     font-size: x-large;
     text-transform: uppercase;
 }
 
-
-.box_discover span {
-    padding: 10px 40px;
-    margin: 0px;
-    background: black;
-    position:absolute;
-    right:20%;
+.box span {
+    position: absolute;
     top: -10px;
+    right: 20%;
+    padding: 10px 40px;
+    background: black;
 }
 
+.carrosel img {
+    width: 40%;
+    padding: 0px 50px 0px 0px;
+    margin-right: auto;
+}
 
+.flyers {
+    gap: 36px;
+}
 
-.main2 section{
+.flyers section {
     position: relative;
 }
 
-.main2  img{
+.flyers .sectionLeft,
+.flyers .sectionRight {
+    padding: 60px 60px 60px 20px;
+}
+
+.flyers .sectionLeft {
+    margin-left: auto;
+}
+
+.flyers .sectionRight {
+    margin-right: auto;
+}
+
+.flyers .sectionLeft .box,
+.flyers .sectionRight .box {
+    padding-top: 30px;
+    padding-bottom: 60px;
+    margin-right: 100px;
+}
+
+.flyers img {
+    position: absolute;
     width: 35%;
-    position:absolute;
-    right: 35px;
     top: 0px;
+    right: 35px;
 }
 
-.main2 .box_discover {
-   margin-right: 100px;
-}
-
-
-
-
-
-
-.box_cicle {
-    gap: 15px;
-    margin: 0px auto;
-    text-align: center;
-}
-
-.circle {
-    padding: 35px 5px;
-    background: green;
-    border-radius: 50%;
-    margin: 0px 20px;
-}
-
-.main3 {
+.animalsCategory {
     margin-top: 40px;
 }
 
-.main4 {
-    width: fit-content;
-    margin: 90px auto;
-    gap: 16px;
-    text-align: center;
+.animalsIcon {
+    gap: 15px;
+    margin: 0px auto;
 }
 
-.main5 {
+.circleIcon {
+    margin: 0px 20px;
+    padding: 35px 5px;
+    background: green;
+    border-radius: 50%;
+}
+
+.section5 {
+    gap: 16px;
     width: fit-content;
     margin: 10px auto;
-    gap: 16px;
-    text-align: center;
     display: grid;
+    text-align: center;
 }
 
 .product {
@@ -157,12 +127,12 @@
 }
 
 .product div {
+    margin: 0px auto;
     padding: 100px 85px;
     background: green;
-    margin: 0px auto;
 }
 
-.mainStore {
+.sectionStore {
     width: fit-content;
     margin: 90px auto;
 }
@@ -170,6 +140,7 @@
 .product1 {
     grid-row: 1 / span 2;
 }
-.product1 .photo{
+
+.product1 .photo {
     padding: 140px 80px;
 }
