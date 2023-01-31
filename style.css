@@ -1,10 +1,15 @@
+@font-face {
+    font-family: Margarine-Regular;
+    src: url(Assets/Margarine-Regular.ttf);
+}
+
 * {
     margin: 0px;
     padding: 0px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-main > section {
+main > section:not(.carrosel) {
     margin: 20px 40px;
 }
 
@@ -20,13 +25,20 @@ main > section {
 .flyers .sectionLeft,
 .flyers .sectionRight {
     box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
 }
 
-/* No Responsive - PROVISORY*/
+.carrosel p:first-child,
+.flyers .sectionLeft p:first-child,
+.flyers .sectionRight p:first-child {
+    margin: 20px 0px 0px ;
+    font-family: Margarine-Regular;
+}
+
+/* No Responsive - ROVISORY*/
 .carrosel p:last-child,
 .flyers .sectionLeft p:last-child,
 .flyers .sectionRight p:last-child {
+    margin: 0px 0px 40px ;
     white-space: nowrap;
 }
 
@@ -37,13 +49,12 @@ main > section {
     padding: 20px 50px;
     position: relative;
     transform: rotate(-5deg);
-    background: green;
-    text-align: center;
+    background: linear-gradient( 180deg, #F47373 0%, #BF4545 100%);
     border-radius: 50%;
+    text-align: center;
 }
 
 .box p {
-    margin: 20px 0px 0px;
     transform: rotate(5deg);
     font-size: x-large;
     text-transform: uppercase;
@@ -51,16 +62,46 @@ main > section {
 
 .box span {
     position: absolute;
-    top: -10px;
-    right: 20%;
-    padding: 10px 40px;
-    background: black;
+    top: 20px;
+    right: 25%;
+    padding: 15px;
+    width: 190px;
+    font-size: 20px;
+    background: #A83E3E;
+    font-family: Margarine-Regular;
+    border-radius: 10px;
+    letter-spacing: 5px;
+}
+
+.carrosel p:first-child{
+    font-size: 30px;
 }
 
 .carrosel img {
     width: 40%;
     padding: 0px 50px 0px 0px;
     margin-right: auto;
+}
+
+.carrosel button{
+    color:white;
+    border: none;
+    margin: auto 0px;
+    height: fit-content;
+    padding: 0px 15px 6px;
+    font-size: xx-large;
+    background: #f47373a8;
+    font-weight: bolder;
+
+    border-radius: 50%;
+}
+
+.carrosel button:first-child{
+    margin-left: 40px;
+}
+
+.carrosel button:last-child{
+    margin-right:40px;
 }
 
 .flyers {
@@ -73,7 +114,9 @@ main > section {
 
 .flyers .sectionLeft,
 .flyers .sectionRight {
-    padding: 60px 60px 60px 20px;
+    width: 50%;
+    padding: 60px 50px;
+    border-radius: 20px;
 }
 
 .flyers .sectionLeft {
@@ -87,8 +130,9 @@ main > section {
 .flyers .sectionLeft .box,
 .flyers .sectionRight .box {
     padding-top: 30px;
-    padding-bottom: 60px;
     margin-right: 100px;
+    margin-left: 10px;
+    padding: 10px;
 }
 
 .flyers img {
