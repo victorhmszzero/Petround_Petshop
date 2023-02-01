@@ -24,7 +24,7 @@ main > section:not(.carrosel) {
 .carrosel,
 .flyers .sectionLeft,
 .flyers .sectionRight {
-    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
 }
 
 .carrosel p:first-child,
@@ -92,7 +92,6 @@ main > section:not(.carrosel) {
     font-size: xx-large;
     background: #f47373a8;
     font-weight: bolder;
-
     border-radius: 50%;
 }
 
@@ -142,20 +141,23 @@ main > section:not(.carrosel) {
     right: 35px;
 }
 
-.animalsCategory {
-    margin-top: 40px;
+main section.animalsCategory {
+    gap: 51px;
+    width: fit-content;
+    margin: 40px auto 0px;
+    display: flex;
 }
 
 .animalsIcon {
-    gap: 15px;
-    margin: 0px auto;
+    text-align: center;
+    letter-spacing: 2px;
 }
 
 .circleIcon {
-    margin: 0px 20px;
-    padding: 35px 5px;
+    padding: 55px;
     background: green;
     border-radius: 50%;
+    margin-bottom: 10px;
 }
 
 .section5 {
@@ -163,23 +165,46 @@ main > section:not(.carrosel) {
     width: fit-content;
     margin: 10px auto;
     display: grid;
-    text-align: center;
 }
-
-.product {
-    grid-area: 1
-}
-
-.product div {
-    margin: 0px auto;
-    padding: 100px 85px;
-    background: green;
+.section5 p {
+    margin: 2px 0px 0px 15px;
 }
 
 .sectionStore {
     width: fit-content;
-    margin: 90px auto;
+    margin: 60px auto;
 }
+.sectionStore h3{
+    margin: 0px 0px 20px;
+    letter-spacing: 2px;
+}
+
+.product {
+    grid-area: 1;
+    max-width: 190px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    padding: 0px 5px 20px;
+}
+.product div {
+    margin: 10px auto;
+    padding: 100px 100px;
+    max-width: 180px;
+    background: green;
+}
+
+.product span{
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.product sup{
+    margin-left: 3px;
+    font-size: 13px;
+}
+
+
+
+
 
 .product1 {
     grid-row: 1 / span 2;
