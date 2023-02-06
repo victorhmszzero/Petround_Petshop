@@ -3,6 +3,32 @@
     src: url(Assets/Margarine-Regular.ttf);
 }
 
+.socialUs .fa{
+    color: white;
+    background: black;
+    padding: 10px 0px;  
+    font-size: 25px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 100%;
+}
+.socialUs .fa-facebook{
+    background: #3B5998;
+}
+.socialUs .fa-linkedin{
+    background: #007bb5;
+}
+.socialUs .fa-instagram{
+    background: linear-gradient(45deg, rgb(255, 145, 0), rgb(207, 0, 197));
+}
+.socialUs .fa-pinterest{
+    background: #cb2027;
+}
+
+section.contactUS span{
+    vertical-align: middle;
+}
 * {
     margin: 0px;
     padding: 0px;
