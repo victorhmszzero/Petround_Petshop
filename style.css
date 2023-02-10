@@ -320,6 +320,16 @@ main section.animalsCategory {
     background-color: #A83E3E;
 }
 
+
+
+
+
+
+
+
+
+
+
 .getNews{
     color: white;
     padding: 30px;
@@ -329,8 +339,8 @@ main section.animalsCategory {
     margin: 0px 110px 0px 140px;
     display: flex;
     gap: 10px;
+    justify-content: space-evenly;
 }
-
 .getNews h3{
     font-weight: 400;
     margin-right: 30px;
@@ -338,15 +348,36 @@ main section.animalsCategory {
     text-transform: uppercase;
 }
 
+.getNews form div{
+    position: relative;    
+    width: 300px;
+    height: 45px;
+    margin: auto 0px;
+}
+
+.getNews label{
+    top: 12px;
+    left: 14px;
+    color: rgb(80, 80, 80);
+    position: absolute;
+    letter-spacing: 1px;
+}
+
 .getNews form input, .getNews form button {
     max-width: 300px;
-    margin: 0px auto;
+    height: 45px;
     width: 100%;
-    height: 40px;
     border: none;
     padding: 10px;
-    align-self: center;
+    font-size: 16px;
     border-radius: 10px;
+}
+
+.getNews input#name{
+    padding-left: 72px;
+}
+.getNews input#email{
+    padding-left: 74px;
 }
 
 .getNews form button {
@@ -354,6 +385,14 @@ main section.animalsCategory {
     max-width: 100px;
     background-color: rgb(0, 0, 177);
 }
+.getNews form button:hover {
+    background-color: rgb(1, 1, 247);
+    cursor: pointer;
+}
+
+
+
+
 footer{
     padding-top: 30px;
     margin-top: 100px;
