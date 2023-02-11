@@ -403,7 +403,38 @@ footer{
 footer div.container{
     width: fit-content;
     margin: 0px auto;
+    display: grid;
+    grid-template-areas:
+    "aboutUs contactUS otherMidia payments aboutME"
+
+    /* "aboutUs contactUS otherMidia  aboutME" */
+    /* "aboutUs payments otherMidia  aboutME" */
+    
 }
+
+.aboutUs{
+    grid-area: aboutUs;
+
+}
+.contactUS{
+    grid-area: contactUS;
+
+}
+.otherMidia{
+    grid-area: otherMidia;
+    width: 260px;
+
+
+}
+.payments{
+    grid-area: payments;
+
+}
+.aboutME{
+    grid-area: aboutME;
+    padding-right: 50px;
+}
+
 
 footer section{
     display:inline-block;
@@ -416,13 +447,35 @@ footer section.aboutUs{
     padding: 30px 50px 50px;
     color: white;
     border-radius: 20px;
+    width: 200px;
 }
 
 footer section.aboutUs h3{
     letter-spacing: 2px;
+    margin-bottom: 10px;
 }
 
 footer section:not(.aboutUs){
     vertical-align:top;
-    margin-top: 40px 
+}
+footer section h4{
+    margin-bottom: 10px;
+
+}
+
+footer .appUS{
+    margin-top: 20px ;
+}
+
+
+.payments img{
+    border-radius: 9px;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+.payments h4{
+    display: 
+}
+.payments img{
+    display: 
 }
