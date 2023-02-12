@@ -3,6 +3,9 @@
     src: url(Assets/Margarine-Regular.ttf);
 }
 
+
+
+
 .socialUs .fa{
     color: white;
     background: black;
@@ -12,19 +15,32 @@
     text-align: center;
     text-decoration: none;
     border-radius: 100%;
+    position: absolute
 }
 .socialUs .fa-facebook{
     background: #3B5998;
 }
 .socialUs .fa-linkedin{
     background: #007bb5;
+    left: 55px;
 }
 .socialUs .fa-instagram{
     background: linear-gradient(45deg, rgb(255, 145, 0), rgb(207, 0, 197));
+    left: 110px;
 }
 .socialUs .fa-pinterest{
     background: #cb2027;
+    left: 165px;
+
 }
+
+
+.socialUs .fa:hover{
+    padding: 12px 0px;
+    opacity:0.8 !important;
+    top: 25;
+}
+
 
 section.contactUS span{
     vertical-align: middle;
@@ -182,10 +198,17 @@ main > section.flyers{
 
 .flyers img {
     position: absolute;
-    width: 35%;
-    top: 0px;
-    right: 35px;
+    width: 28%;
+    top: 40px;
+    right: 45px;
 }
+.sectionLeft img{
+    top: 20px;
+    width: 27%;
+    right: 60px;
+}
+
+
 
 main section.animalsCategory {
     gap: 51px;
@@ -200,13 +223,18 @@ main section.animalsCategory {
 }
 
 .circleIcon {
-    padding: 55px;
-    background-color: #A83E3E;;
     border-radius: 50%;
-    margin-bottom: 10px;
+    border: 1px solid rgba(0,0,0,0.08)
+}
+.circleIcon img{
+    border-radius: 50%;    
+    height: 100px;
 }
 
-.circleIcon:hover{    
+
+
+.circleIcon:hover{  
+    color: rgb(245, 245, 245);
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
     cursor:pointer;
 }
@@ -281,6 +309,22 @@ main section.animalsCategory {
     background-image: url("Assets/Store/Product8.jpg");
     background-size: 80%;
 }
+
+
+
+
+.product div.pp1{ background-image: url("Assets/Services/passeio50min.jpg");}
+.product div.pp2{ background-image: url("Assets/Services/tosaCompleta.jpg");}
+.product div.pp3{ background-image: url("Assets/Services/cortarUnha.jpg");}
+.product div.pp4{ background-image: url("Assets/Services/veterinario.jpg");}
+.product div.pp5{ background-image: url("Assets/Services/hidratation.jpg");}
+
+
+
+
+
+
+
 
 .product .header{
     display: flex;
@@ -463,9 +507,19 @@ footer section h4{
 
 }
 
-footer .appUS{
-    margin-top: 20px ;
+footer .otherMidia{
+   position: relative; 
 }
+
+footer .appUS{
+    margin-top: 70px ;
+}
+
+footer .appUS img:hover,
+footer .payments img:hover{
+    cursor: pointer;
+    opacity:0.7 !important;
+;}
 
 
 .payments img{
@@ -478,4 +532,8 @@ footer .appUS{
 }
 .payments img{
     display: 
+}
+.aboutME a:hover{
+    color: red
+
 }
