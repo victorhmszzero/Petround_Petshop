@@ -91,7 +91,7 @@ header section:first-child input{
     border-radius: 5px;
 }
 
-header section:first-child button{
+header section:first-child button.search{
     padding: 0px 10px;
     background: none;
     border: none;
@@ -101,7 +101,7 @@ header section:first-child button{
 
 }
 
-header section:first-child div span.material-symbols-outlined {
+header section:first-child div a span.material-symbols-outlined {
     font-size: 35px;
     margin-left: 14px;
     background-image: linear-gradient(to top, #A83E3E 50%, #F47373 50%);
@@ -109,11 +109,11 @@ header section:first-child div span.material-symbols-outlined {
     color: transparent;
     transition: 200ms;
 }
-header section:first-child div span.material-symbols-outlined:first-child {
+header section:first-child div a:first-child span.material-symbols-outlined {
     color:#F47373
 }
 
-header section:first-child div span.material-symbols-outlined:hover,
+header section:first-child div a span.material-symbols-outlined:hover,
 header section:first-child button:hover     {
     color: #A83E3E;
     cursor: pointer;
@@ -173,7 +173,17 @@ section.contactUS span{
 main > section.flyers{
     margin: 20px 40px;
 }
+.carrosel{
+    position: relative;
+}
+.bannerclickArea{
+    position: absolute;
+    padding: 10px 1px;
+    width: 79%;
+    height: 92%;
+    left: 10.3%;
 
+}
 .flex,
 .carrosel,
 .flyers,
@@ -299,7 +309,8 @@ cursor:pointer;
     gap: 36px;
 }
 
-.flyers section {
+.flyers section,
+.flyers a {
     position: relative;
 }
 
@@ -645,6 +656,10 @@ footer .otherMidia{
 footer .appUS{
     margin-top: 70px ;
 }
+footer .appUS button{
+background: none;
+border: none
+;}
 
 footer .appUS img:hover,
 footer .payments img:hover{

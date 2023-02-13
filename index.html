@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <link href="style.css" rel="stylesheet">
 
-    
+
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -18,20 +18,23 @@
         <section>
             <img height="35" src="Assets/Logo By- Victorhmszzero.png">
             <form>
-                <input type="search" required placeholder="Busque produtos e serviços..."/>
-                <button type="submit"><span class="material-symbols-outlined">search</span></button>
+                <input type="search" required placeholder="Busque produtos e serviços..." tabindex="0" />
+                <button class="search" tabindex="-1" type="submit"><span
+                        class="material-symbols-outlined">search</span></button>
             </form>
             <div>
-                <span class="material-symbols-outlined">favorite</span>
-                <span class="material-symbols-outlined">shopping_cart</span>
-                <span class="material-symbols-outlined">group</span>
+                <a href="#" tabindex="0"><span class="material-symbols-outlined">favorite</span></a>
+                <a href="#" tabindex="0"><span class="material-symbols-outlined">shopping_cart</span></a>
+                <a href="#" tabindex="0"><span class="material-symbols-outlined">group</span></a>
             </div>
         </section>
         <section>
             <ul>
-                <li><button>
-                    <span class="material-symbols-outlined ">menu </span>Categorias
-                </button></li>
+                <li>
+                    <button href="#" tabindex="0">
+                        <span class="material-symbols-outlined ">menu </span>Categorias
+                    </button>
+                </li>
                 <nav>
                     <li><a href="#" class="gradient-text">Loja</a></li>
                     <li><a href="#">Serviços</a></li>
@@ -44,121 +47,122 @@
     </header>
     <main>
         <section class="carrosel">
-            <button>&lt;</button>
+            <button tabindex="0" tabindex="0">&lt;</button>
+            <a class="bannerclickArea" tabindex="0"></a>
             <div class="box">
                 <p>Produtos Exclusivos</p>
                 <p>Agora é a rodada do seu Pet!</p>
                 <p><span> Eu quero</span></p>
             </div>
             <img src="Assets/Home/DogAndCat.png" />
-            <button>&gt;</button>
+            <button tabindex="0">&gt;</button>
         </section>
         <!-- -->
         <section class="flyers">
-            <section class="sectionLeft">
+            <a class="sectionLeft" tabindex="0">
                 <div class="box">
                     <p> Economize</p>
                     <p>Na primeira compra</p>
                     <p><span>Saiba Mais</span></p>
                 </div>
                 <img src="Assets/Home/economizeCompra.png" />
-            </section>
+            </a>
             <!-- -->
-            <section class="sectionRight">
+            <a class="sectionRight" tabindex="0">
                 <div class="box">
                     <p> Adote um Pet</p>
                     <p> Diretamente no site</p>
                     <p><span>Saiba Mais</span></p>
                 </div>
                 <img src="Assets/Home/dog1.png" />
-            </section>
+            </a>
         </section>
         <!-- -->
         <section class="animalsCategory ">
-            <div class="animalsIcon">
+            <a class="animalsIcon" tabindex="0">
                 <div class="circleIcon">
                     <img src="Assets/Home/circleDog.png" />
                 </div>
                 <p>Cachorros</p>
-            </div>
-            <div class="animalsIcon">
+            </a>
+            <a class="animalsIcon" tabindex="0">
                 <div class="circleIcon">
                     <img src="Assets/Home/circleCat.png" />
                 </div>
                 <p>Gatos</p>
-            </div>
-            <div class="animalsIcon">
+            </a>
+            <a class="animalsIcon" tabindex="0">
                 <div class="circleIcon">
                     <img src="Assets/Home/circleRabbit.jpg" />
                 </div>
                 <p>Coelhos</p>
-            </div>
-            <div class="animalsIcon">
+            </a>
+            <a class="animalsIcon" tabindex="0">
                 <div class="circleIcon">
                     <img src="Assets/Home/circleRat.jpg" />
                 </div>
                 <p>Roedores</p>
-            </div>
-            <div class="animalsIcon">
+            </a>
+            <a class="animalsIcon" tabindex="0">
                 <div class="circleIcon">
                     <img src="Assets/Home/circleFish.jpg" />
                 </div>
                 <p>Peixes</p>
-            </div>
-            <div class="animalsIcon">
+            </a>
+            <a class="animalsIcon" tabindex="0">
                 <div class="circleIcon">
                     <img src="Assets/Home/circleBird.jpg" />
                 </div>
                 <p>Passaros</p>
-            </div>
+            </a>
         </section>
         <!-- -->
         <div class="sectionStore">
             <h3>Produtos populares</h3>
             <section class="section5 flex">
-                <div class="product">
+                <a class="product" tabindex="0">
                     <div class="picture p1"></div>
                     <div class="header">
                         <p>R$ 6<sup>99</sup></p>
                         <p class="review"><span class="emoji">⭐</span>4.9 </p>
                     </div>
                     <p>Snack Cat Licious Para Gatos Dental - 40g</p>
-                </div>
-                <div class="product">
+                </a>
+                <a class="product" tabindex="0">
                     <div class="picture p2"></div>
                     <div class="header">
                         <p><span>R$ 129<sup>40</sup></span></p>
                         <p class="review"><span class="emoji">⭐</span>4.7 </p>
                     </div>
                     <p>Ração Golden Seleção Natural Cães - 10,1kg</p>
-                </div>
-                <div class="product">
+                </a>
+                <a class="product" tabindex="0">
                     <div class="picture p3"></div>
                     <div class="header">
                         <p><span>R$ 8<sup>59</sup></span></p>
                         <p class="review"><span class="emoji">⭐</span>4.2 </p>
                     </div>
                     <p>Ração Úmida Premier Gourmet Para Cães - 85g</p>
-                </div>
-                <div class="product">
+                </a>
+                <a class="product" tabindex="0">
                     <div class="picture p4"></div>
                     <div class="header">
                         <p><span>R$ 29<sup>90</sup></span></p>
                         <p class="review"><span class="emoji">⭐</span>4.7 </p>
                     </div>
                     <p>Osso Bonapet Natural Fêmur Para Cães</p>
-                </div>
-                <div class="product">
+                </a>
+                <a class="product" tabindex="0">
                     <div class="picture p5"></div>
                     <div class="header">
                         <p><span>R$ 19<sup>99</sup></span></p>
                         <p class="review"><span class="emoji">⭐</span>4.0</p>
                     </div>
                     <p>Ração para Coelhos Pacote Supra - 5kg</p>
-                </div>
-                <div class="product product1">
+                </a>
+                <a class="product product1">
                     <div class="photo"></div>
-                </div>
+                </a>
             </section>
         </div>
         <!-- -->
@@ -168,47 +172,47 @@
                 <div class="product product1">
                     <div class="photo"></div>
                 </div>
-                <div class="product ">
+                <a class="product " tabindex="0">
                     <div class="picture pp1"></div>
                     <div class="header">
                         <p><span>R$ 50<sup>00</sup></span></p>
                         <p class="review"><span class="emoji">⭐</span>4.2 </p>
                     </div>
                     <p>Passeio - 50min</p>
-                </div>
+                </a>
 
-                <div class="product">
+                <a class="product" tabindex="0">
                     <div class="picture pp2"></div>
                     <div class="header">
                         <p><span>R$ 76<sup>00</sup></span></p>
                         <p class="review"><span class="emoji">⭐</span>4.2 </p>
                     </div>
                     <p>Tosa completa</p>
-                </div>
-                <div class="product">
+                </a>
+                <a class="product" tabindex="0">
                     <div class="picture pp3"></div>
                     <div class="header">
                         <p><span>R$ 32<sup>20</sup></span></p>
                         <p class="review"><span class="emoji">⭐</span>4.2 </p>
                     </div>
                     <p>Cortar unha</p>
-                </div>
-                <div class="product">
+                </a>
+                <a class="product" tabindex="0">
                     <div class="picture pp4"></div>
                     <div class="header">
                         <p><span>R$ 120<sup>50</sup></span></p>
                         <p class="review"><span class="emoji">⭐</span>4.2 </p>
                     </div>
                     <p>Veterinario</p>
-                </div>
-                <div class="product">
+                </a>
+                <a class="product" tabindex="0">
                     <div class="picture pp5"></div>
                     <div class="header">
                         <p><span>R$ 62<sup>90</sup></span></p>
                         <p class="review"><span class="emoji">⭐</span>4.2 </p>
                     </div>
                     <p>Hidratação</p>
-                </div>
+                </a>
             </section>
         </div>
         <!-- -->
@@ -252,19 +256,15 @@
             <section class="otherMidia">
                 <div class="socialUs">
                     <h4>Midias Sociais</h4>
-
-                    <a href="#" class="fa fa-facebook"></a>
-
-                    <a href="#" class="fa fa-linkedin"></a>
-
-                    <a href="#" class="fa fa-instagram"></a>
-
-                    <a href="#" class="fa fa-pinterest"></a>
+                    <a href="#" class="fa fa-facebook" tabindex="0"></a>
+                    <a href="#" class="fa fa-linkedin" tabindex="0"></a>
+                    <a href="#" class="fa fa-instagram" tabindex="0"></a>
+                    <a href="#" class="fa fa-pinterest" tabindex="0"></a>
                 </div>
                 <div class="appUS">
                     <h4>Versão mobile</h4>
-                    <img width="120" src="Assets/Footer/app_appStore.png">
-                    <img width="120" src="Assets/Footer/app_playStore.png">
+                    <button href="#" tabindex="0"><img width="120" src="Assets/Footer/app_appStore.png"></button>
+                    <button href="#" tabindex="0"><img width="120" src="Assets/Footer/app_playStore.png"></button>
                 </div>
             </section>
 
@@ -288,31 +288,30 @@
 
             <section class="payments">
                 <h4>Formas de pagamento </h4>
-                <img height="35" src="Assets/Footer/payment_0000_1.png" />
+                <img height="35" src="Assets/Footer/payment_0000_1.png" tabindex="0"/>
                 <!-- <img height="35" src="Assets/Footer/payment_0001_2.png" /> -->
-                <img height="35" src="Assets/Footer/payment_0002_3.png" />
-                <img height="35" src="Assets/Footer/payment_0003_4.png" />
-                <img height="35" src="Assets/Footer/payment_0004_5.png" />
-                <img height="35" src="Assets/Footer/payment_0005_6.png" />
-                <img height="35" src="Assets/Footer/payment_0006_7.png" />
-                <img height="35" src="Assets/Footer/payment_0007_8.png" />
+                <img height="35" src="Assets/Footer/payment_0002_3.png" tabindex="0"/>
+                <img height="35" src="Assets/Footer/payment_0003_4.png" tabindex="0"/>
+                <img height="35" src="Assets/Footer/payment_0004_5.png" tabindex="0"/>
+                <img height="35" src="Assets/Footer/payment_0005_6.png" tabindex="0" />
+                <img height="35" src="Assets/Footer/payment_0006_7.png" tabindex="0"/>
+                <img height="35" src="Assets/Footer/payment_0007_8.png" tabindex="0"/>
                 <!-- <img height="35" src="Assets/Footer/payment_0008_9.png" /> -->
-                <img height="35" src="Assets/Footer/payment_0009_10.png" />
-                <img height="35" src="Assets/Footer/payment_0011_12.png" />
-                <img height="35" src="Assets/Footer/payment_0010_11.png" />
-                <img height="35" src="Assets/Footer/payment_0012_13.png" />
+                <img height="35" src="Assets/Footer/payment_0009_10.png" tabindex="0"/>
+                <img height="35" src="Assets/Footer/payment_0011_12.png" tabindex="0"/>
+                <img height="35" src="Assets/Footer/payment_0010_11.png" tabindex="0"/>
+                <img height="35" src="Assets/Footer/payment_0012_13.png" tabindex="0"/>
             </section>
 
 
 
             <section class="aboutME">
                 <h4>Sobre o projeto </h4>
-                <a href="#"> Criador do projeto</a>
+                <a href="#" tabindex="0"> Criador do projeto</a>
                 <br>
-                <a href="#"> Tecnologias ultilizadas</a>
+                <a href="#" tabindex="0"> Tecnologias ultilizadas</a>
                 <br>
-                <a href="#"> Referências</a>
-
+                <a href="#" tabindex="0"> Referências</a>
                 <p>&copy;Vigorzzerotm - 2023</p>
             </section>
 
