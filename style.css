@@ -5,8 +5,79 @@
 
 
 
+header section ul li.menu:hover > ul.categoryList{
+    visibility: visible;  
+    opacity: 1;
+    transition: visibility 0s, opacity 0.5s linear;
+
+}
+
+header section ul li > ul.categoryList{
+    transition-delay: 0.5s;     
+    display: block;
+    position: absolute;
+    top:36px;
+    left:25px;
+    z-index: 2;
+    visibility: hidden;
+    opacity: 0;
+
+}
+header ul.categoryList > li{
+    height: 21px;
+    position: relative;
+    display: block;
+
+
+}
+header .categoryItem:hover ul.list {
+    transition: 0s;     
+    visibility: visible;  
+    opacity: 1;
+}
+
+header ul.categoryList ul{
+    transition: 0s;     
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+    left:179px;
+}
+
+header ul.dogList{  bottom: 31px; }
+header ul.catList{ bottom: 72px; }
+header ul.rabbitList{ bottom: 113px; }
+header ul.ratList{ bottom: 154px; }
+header ul.fishList{ bottom: 195px; }
+header ul.birdList{ bottom: 236px; }
+
+header section ul li ul.list li {
+    display: block;
+    padding: 10px;
+    background-color: #F47373;
+}
+
+header section ul li ul.list li ul.list {
+    display: block;
+}
+
+
+
+header section  ul.list li:hover{
+    background-color: #A83E3E;
+}
+
+header section ul.list li a{
+    padding: 0px 30px 0px 0px ;
+}
+header section ul.list li a:hover{
+    background-color: none;
+}
+
+
+
 header section:last-child{
-    /* margin: 113px 0px 0px; */
+    margin: 113px 0px 0px;
     padding: 15px 0px;
     background-color: #F47373;
     height: 21px;
@@ -31,9 +102,11 @@ header section:last-child button{
     position: absolute;
     bottom: -10px;
 }
-
-header section:last-child button:hover,
-header section:last-child a:hover{
+header section:last-child ul li.menu{
+    position: relative;
+}
+header section:last-child ul li.menu > a:hover,
+header section:last-child ul nav li > a:hover{
     background-color: #A83E3E;
 }
 
@@ -68,8 +141,8 @@ header section:first-child{
     z-index: 2;
     box-shadow :0px 0px 12px 0px rgba(0,0,0,0.2);
     background-color: #ffffff;
-    padding: 40px 0px 20px;
-    /* position: fixed; */
+    padding: 40px 0px 27px;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -80,6 +153,8 @@ header section:first-child form{
     border: 1px solid rgba(0,0,0,0.2);
     width: fit-content;
     border-radius: 5px;
+
+
 }
 
 header section:first-child input{
@@ -100,8 +175,12 @@ header section:first-child button.search{
     transition: 200ms;
 
 }
+header section:first-child div {
+    margin: auto 0px;
+}
 
 header section:first-child div a span.material-symbols-outlined {
+
     font-size: 35px;
     margin-left: 14px;
     background-image: linear-gradient(to top, #A83E3E 50%, #F47373 50%);
@@ -464,10 +543,6 @@ main section.animalsCategory {
 
 
 
-
-
-
-
 .product .header{
     display: flex;
     justify-content: space-between;
@@ -500,6 +575,9 @@ main section.animalsCategory {
     background-color: #A83E3E;
     border-bottom: 60px solid #A83E3E;
 }
+
+
+
 
 .product1 .photo {
     padding: 80px;
