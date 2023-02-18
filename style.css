@@ -3,123 +3,226 @@
     src: url(Assets/Margarine-Regular.ttf);
 }
 
-
-
-header section ul li.menu:hover > ul.categoryList{
-    visibility: visible;  
-    opacity: 1;
-    transition: visibility 0s, opacity 0.5s linear;
-
+/* 
+Proprieties organization
+selecetor{
+    display stuff;
+    position stuff;
+    box-model suff;
+    typography stuff;
+    manipulation stuff;
+    misc;
 }
+*/
 
-header section ul li > ul.categoryList{
-    transition-delay: 0.5s;     
-    display: block;
-    position: absolute;
-    top:36px;
-    left:25px;
+
+/* Header Style */
+.header-top {
+    display: flex;
+    justify-content: space-evenly;
+
+    position: fixed;
+    padding: 40px 0px 27px;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 2;
-    visibility: hidden;
-    opacity: 0;
 
+    background-color: #ffffff;
+    box-shadow :0px 0px 12px 0px rgba(0,0,0,0.2);
 }
-header ul.categoryList > li{
-    height: 21px;
-    position: relative;
-    display: block;
 
-
+.header-top form {
+    width: fit-content;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 5px;
 }
-header .categoryItem:hover ul.list {
-    transition: 0s;     
-    visibility: visible;  
+.header-top form input {
+    padding: 10px 15px 12px;
+    width: 300px;
+
+    outline: none;
+    border: none;
+    border-radius: 5px;
+
+    font-size: 16px;
+}
+.header-top form button {
+    padding: 0px 10px;
+    border: none;
+    border-left: 1px solid rgba(0,0,0,0.2);
+    background: none;
+
+    transition: 200ms;
+    vertical-align: middle;
+}
+
+.header-top div {
+    margin: auto 0px;
+}
+.header-top div .header-icon  {
+    margin-left: 14px;
+    background-clip: text;
+    background-image: linear-gradient(
+        to top, #A83E3E 50%, #F47373 50%);
+    -webkit-background-clip: text;
+
+    color: transparent;
+    font-size: 35px;
+    transition: 200ms;
+}
+
+.header-top div a:first-child .header-icon  {
+    color:#F47373 
+}
+
+.header-top form button:hover,
+.header-top .header-icon:hover{
+    color: #A83E3E;
+    cursor: pointer;
+}
+
+
+
+
+
+/* Header Style */
+
+
+header section ul li.menu:hover > ul.categoryList {
     opacity: 1;
+    visibility: visible;
+    transition: visibility 0s, opacity 0.5s linear;
 }
 
-header ul.categoryList ul{
-    transition: 0s;     
-    visibility: hidden;
+
+
+header section ul li > ul.categoryList {
+    display: block;
     position: absolute;
+    top: 36px;
+    left: 25px;
+    z-index: 2;
+
     opacity: 0;
-    left:179px;
+    visibility: hidden;
+    transition-delay: 0.5s;
 }
 
-header ul.dogList{  bottom: 31px; }
-header ul.catList{ bottom: 72px; }
-header ul.rabbitList{ bottom: 113px; }
-header ul.ratList{ bottom: 154px; }
-header ul.fishList{ bottom: 195px; }
-header ul.birdList{ bottom: 236px; }
+header ul.categoryList > li {
+    display: block;
+    position: relative;
+    height: 21px;
+}
+
+header .categoryItem:hover ul.list {
+    opacity: 1;
+    visibility: visible;
+    transition: 0s;
+}
+
+header ul.categoryList ul {
+    position: absolute;
+    left: 179px;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: 0s;
+}
+
+header ul.dogList {
+    bottom: 31px;
+}
+
+header ul.catList {
+    bottom: 72px;
+}
+
+header ul.rabbitList {
+    bottom: 113px;
+}
+
+header ul.ratList {
+    bottom: 154px;
+}
+
+header ul.fishList{
+    bottom: 195px;
+}
+
+header ul.birdList{
+    bottom: 236px;
+}
 
 header section ul li ul.list li {
     display: block;
     padding: 10px;
     background-color: #F47373;
 }
-
+/*  */
 header section ul li ul.list li ul.list {
     display: block;
 }
 
-
-
-header section  ul.list li:hover{
+header section ul.list li:hover{
     background-color: #A83E3E;
 }
 
 header section ul.list li a{
     padding: 0px 30px 0px 0px ;
 }
+
 header section ul.list li a:hover{
     background-color: none;
 }
 
+/*  */
 
-
+/*  */
 header section:last-child{
     margin: 113px 0px 0px;
+    height: 21px;
     padding: 15px 0px;
     background-color: #F47373;
-    height: 21px;
 }
 
-header section:last-child button,
-header section:last-child a
-{
-    color: white;
-    border: none;
-    height: 41px;
-    cursor: pointer;
-    padding: 10px 20px;
-    font-size: 16px;
+header section:last-child button, 
+header section:last-child a {
     margin-left: 30px;
-    background: none;
-    text-transform: uppercase;
-    transition: 0.4s;
+    height: 41px;
+    padding: 10px 20px;
 
+    border: none;
+    background: none;
+
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+
+    cursor: pointer;
+    transition: 0.4s;
 }
+
 header section:last-child button{
     position: absolute;
     bottom: -10px;
 }
+
 header section:last-child ul li.menu{
     position: relative;
 }
-header section:last-child ul li.menu > a:hover,
-header section:last-child ul nav li > a:hover{
+
+header section:last-child  li.menu > a:hover, 
+header section:last-child  nav li > a:hover{
     background-color: #A83E3E;
 }
 
-
 header section:last-child span{
-    vertical-align: top;
     margin-right: 10px;
+    vertical-align: top;
 }
 
-
-
-
-header section:last-child ul{
+header section:last-child nav{
     display: flex;
     justify-content: space-around;
     position: relative;
@@ -137,83 +240,35 @@ header section:last-child a{
 
 
 
-header section:first-child{
-    z-index: 2;
-    box-shadow :0px 0px 12px 0px rgba(0,0,0,0.2);
-    background-color: #ffffff;
-    padding: 40px 0px 27px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: space-evenly;
-}
-header section:first-child form{
-    border: 1px solid rgba(0,0,0,0.2);
-    width: fit-content;
-    border-radius: 5px;
+
+/* -----------------------------------------------------------------  */
+/* -----------------------------------------------------------------  */
+/* -----------------------------------------------------------------  */
+/* -----------------------------------------------------------------  */
+/* -----------------------------------------------------------------  */
+/* -----------------------------------------------------------------  */
+/* -----------------------------------------------------------------  */
+/* -----------------------------------------------------------------  */
+/* -----------------------------------------------------------------  */
+/* -----------------------------------------------------------------  */
+/* -----------------------------------------------------------------  */
 
 
-}
 
-header section:first-child input{
-    padding: 10px 15px 12px;
-    outline: none;
-    border: none;
-    width: 300px;
-    font-size: 16px;
-    border-radius: 5px;
-}
-
-header section:first-child button.search{
-    padding: 0px 10px;
-    background: none;
-    border: none;
-    border-left: 1px solid rgba(0,0,0,0.2);
-    vertical-align: middle;
-    transition: 200ms;
-
-}
-header section:first-child div {
-    margin: auto 0px;
-}
-
-header section:first-child div a span.material-symbols-outlined {
-
-    font-size: 35px;
-    margin-left: 14px;
-    background-image: linear-gradient(to top, #A83E3E 50%, #F47373 50%);
-    -webkit-background-clip: text;
-    color: transparent;
-    transition: 200ms;
-}
-header section:first-child div a:first-child span.material-symbols-outlined {
-    color:#F47373
-}
-
-header section:first-child div a span.material-symbols-outlined:hover,
-header section:first-child button:hover     {
-    color: #A83E3E;
-    cursor: pointer;
-}
 
 footer *{
     transition: 200ms;
-
 }
-
 .socialUs .fa{
     color: white;
     background: black;
-    padding: 10px 0px;  
+    padding: 10px 0px;
     font-size: 25px;
     width: 50px;
     text-align: center;
     text-decoration: none;
     border-radius: 100%;
     position: absolute;
-
 }
 .socialUs .fa-facebook{
     background: #3B5998;
@@ -229,17 +284,11 @@ footer *{
 .socialUs .fa-pinterest{
     background: #cb2027;
     left: 165px;
-
 }
-
-
 .socialUs .fa:hover{
-
     padding: 12px 0px;
     opacity:0.8 !important;
 }
-
-
 section.contactUS span{
     vertical-align: middle;
 }
@@ -248,7 +297,6 @@ section.contactUS span{
     padding: 0px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
 main > section.flyers{
     margin: 20px 40px;
 }
@@ -261,18 +309,11 @@ main > section.flyers{
     width: 79%;
     height: 92%;
     left: 10.3%;
-
 }
-.flex,
-.carrosel,
-.flyers,
-.flyers .sectionLeft,
-.flyers .sectionRight {
+.flex, .carrosel, .flyers, .flyers .sectionLeft, .flyers .sectionRight {
     display: flex;
 }
-
-.flyers .sectionLeft,
-.flyers .sectionRight {
+.flyers .sectionLeft, .flyers .sectionRight {
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
     transition: 300ms;
 }
@@ -280,42 +321,23 @@ main > section.flyers{
     box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
     transition: 300ms;
 }
-
-
-
-
-.flyers .sectionLeft:hover,
-.flyers .sectionRight:hover {
+.flyers .sectionLeft:hover, .flyers .sectionRight:hover {
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
     cursor:pointer;
 }
-
 .carrosel:hover{
-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.2);
-cursor:pointer;
-
+    cursor:pointer;
+    box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.2);
 }
-
-
-
-
-
-
-.carrosel p:first-child,
-.flyers .sectionLeft p:first-child,
-.flyers .sectionRight p:first-child {
+.carrosel p:first-child, .flyers .sectionLeft p:first-child, .flyers .sectionRight p:first-child {
     margin: 20px 0px 0px ;
     font-family: Margarine-Regular;
 }
-
 /* No Responsive - ROVISORY*/
-.carrosel p:last-child,
-.flyers .sectionLeft p:last-child,
-.flyers .sectionRight p:last-child {
+.carrosel p:last-child, .flyers .sectionLeft p:last-child, .flyers .sectionRight p:last-child {
     margin: 0px 0px 40px ;
     white-space: nowrap;
 }
-
 .box {
     width: 57%;
     color: white;
@@ -324,16 +346,14 @@ cursor:pointer;
     position: relative;
     transform: rotate(-5deg);
     background: linear-gradient( 180deg, #F47373 0%, #BF4545 100%);
-    border-radius: 50%;
     text-align: center;
+    border-radius: 50%;
 }
-
 .box p {
     transform: rotate(5deg);
     font-size: x-large;
     text-transform: uppercase;
 }
-
 .box span {
     position: absolute;
     top: 20px;
@@ -346,17 +366,14 @@ cursor:pointer;
     border-radius: 10px;
     letter-spacing: 5px;
 }
-
 .carrosel p:first-child{
     font-size: 30px;
 }
-
 .carrosel img {
     width: 40%;
     padding: 0px 50px 0px 0px;
     margin-right: auto;
 }
-
 .carrosel button{
     color:white;
     border: none;
@@ -364,103 +381,79 @@ cursor:pointer;
     height: fit-content;
     padding: 0px 15px 6px;
     font-size: xx-large;
+    transition: 300ms;
     background: #f47373a8;
     font-weight: bolder;
     border-radius: 50%;
-    transition: 300ms;
 }
 .carrosel button:hover{
     cursor: pointer;
     background-color: #A83E3E;
 }
-
-
 .carrosel button:first-child{
     margin-left: 40px;
 }
 .carrosel button:last-child{
     margin-right:40px;
 }
-
-
-
 .flyers {
     gap: 36px;
 }
-
-.flyers section,
-.flyers a {
+.flyers section, .flyers a {
     position: relative;
 }
-
-.flyers .sectionLeft,
-.flyers .sectionRight {
+.flyers .sectionLeft, .flyers .sectionRight {
     width: 50%;
     padding: 60px 50px;
     border-radius: 20px;
 }
-
 .flyers .sectionLeft {
     margin-left: auto;
 }
-
 .flyers .sectionRight {
     margin-right: auto;
 }
-
-.flyers .sectionLeft .box,
-.flyers .sectionRight .box {
+.flyers .sectionLeft .box, .flyers .sectionRight .box {
+    padding: 10px;
+    margin-left: 10px;
     padding-top: 30px;
     margin-right: 100px;
-    margin-left: 10px;
-    padding: 10px;
 }
-
 .flyers img {
-    position: absolute;
-    width: 28%;
     top: 40px;
+    width: 28%;
     right: 45px;
+    position: absolute;
 }
 .sectionLeft img{
     top: 20px;
     width: 27%;
     right: 60px;
 }
-
-
-
 main section.animalsCategory {
     gap: 51px;
     width: fit-content;
     margin: 40px auto 0px;
     display: flex;
 }
-
 .animalsIcon {
     text-align: center;
     letter-spacing: 2px;
 }
-
 .circleIcon {
+    border: 1px solid rgba(0,0,0,0.08);
     transition: 300ms;
     border-radius: 50%;
-    border: 1px solid rgba(0,0,0,0.08)
 }
 .circleIcon img{
-    border-radius: 50%;    
     height: 100px;
+    border-radius: 50%;
 }
-
-
-
-.circleIcon:hover{  
+.circleIcon:hover{
     color: rgb(245, 245, 245);
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
     cursor:pointer;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
 }
-
-
 .section5 {
     gap: 16px;
     width: fit-content;
@@ -470,7 +463,6 @@ main section.animalsCategory {
 .section5 p {
     margin: 2px 0px 0px 15px;
 }
-
 .sectionStore {
     width: fit-content;
     margin: 60px auto;
@@ -479,39 +471,36 @@ main section.animalsCategory {
     margin: 0px 0px 20px;
     letter-spacing: 2px;
 }
-
 .product {
-    grid-area: 1;
-    max-width: 190px;
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
-    padding: 0px 5px 20px;
     height: 300px;
+    padding: 0px 5px 20px;
     overflow: hidden;
-    border-bottom: 20px solid white;
+    grid-area: 1;
     transition: 300ms;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    max-width: 190px;
     max-width: 200px;
+    border-bottom: 20px solid white;
 }
 .product:hover {
-    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.3);
     cursor: pointer;
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.3);
 }
-
 .product img {
+    width:100%;
     max-width: 190px;
     max-height: 190px;
-    width:100%;
 }
-
 .product div.picture {
-    padding: 20px 0px;
-    max-height: 180px;
-    max-width: 180px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 90%;
     width: 100%;
     height: 100%;
     margin: 0px auto;
+    padding: 20px 0px;
+    max-width: 180px;
+    max-height: 180px;
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .product div.p1{
     background-image: url("Assets/Store/Product5.jpg");
@@ -520,8 +509,8 @@ main section.animalsCategory {
     background-image: url("Assets/Store/Product13.jpg");
 }
 .product div.p3{
-    background-image: url("Assets/Store/Product12.jpg");
     background-size: 110%;
+    background-image: url("Assets/Store/Product12.jpg");
 }
 .product div.p4{
     background-image: url("Assets/Store/Product14.jpg");
@@ -530,24 +519,25 @@ main section.animalsCategory {
     background-image: url("Assets/Store/Product8.jpg");
     background-size: 80%;
 }
-
-
-
-
-.product div.pp1{ background-image: url("Assets/Services/passeio50min.jpg");}
-.product div.pp2{ background-image: url("Assets/Services/tosaCompleta.jpg");}
-.product div.pp3{ background-image: url("Assets/Services/cortarUnha.jpg");}
-.product div.pp4{ background-image: url("Assets/Services/veterinario.jpg");}
-.product div.pp5{ background-image: url("Assets/Services/hidratation.jpg");}
-
-
-
-
+.product div.pp1{
+    background-image: url("Assets/Services/passeio50min.jpg");
+}
+.product div.pp2{
+    background-image: url("Assets/Services/tosaCompleta.jpg");
+}
+.product div.pp3{
+    background-image: url("Assets/Services/cortarUnha.jpg");
+}
+.product div.pp4{
+    background-image: url("Assets/Services/veterinario.jpg");
+}
+.product div.pp5{
+    background-image: url("Assets/Services/hidratation.jpg");
+}
 .product .header{
     display: flex;
     justify-content: space-between;
 }
-
 .product .header p:first-child{
     font-size: 22px;
     font-weight: normal;
@@ -557,52 +547,34 @@ main section.animalsCategory {
     margin: 5px 20px auto 0px;
 }
 .product sup{
-    margin-left: 3px;
     font-size: 13px;
+    margin-left: 3px;
 }
-
 .emoji{
-    color: transparent;  
+    color: transparent;
     text-shadow: 0 0 0 #A83E3E;
 }
-
 .services .product > p:last-child{
     width: 200px;
 }
-
 .product1 {
     grid-row: 1 / span 2;
-    background-color: #A83E3E;
     border-bottom: 60px solid #A83E3E;
+    background-color: #A83E3E;
 }
-
-
-
-
 .product1 .photo {
     padding: 80px;
     background-color: #A83E3E;
 }
-
-
-
-
-
-
-
-
-
-
-
 .getNews{
     color: white;
     padding: 30px;
     background-color: rgba(80, 80, 255, 0.719);
 }
 .getNews form{
+    gap: 10px;
     margin: 0px 110px 0px 140px;
     display: flex;
-    gap: 10px;
     justify-content: space-evenly;
 }
 .getNews h3{
@@ -611,14 +583,12 @@ main section.animalsCategory {
     letter-spacing: 3px;
     text-transform: uppercase;
 }
-
 .getNews form div{
-    position: relative;    
     width: 300px;
     height: 45px;
     margin: auto 0px;
+    position: relative;
 }
-
 .getNews label{
     top: 12px;
     left: 14px;
@@ -626,131 +596,101 @@ main section.animalsCategory {
     position: absolute;
     letter-spacing: 1px;
 }
-
 .getNews form input, .getNews form button {
-    max-width: 300px;
-    height: 45px;
     width: 100%;
     border: none;
+    height: 45px;
     padding: 10px;
     font-size: 16px;
+    max-width: 300px;
     border-radius: 10px;
 }
-
 .getNews input#name{
     padding-left: 72px;
 }
 .getNews input#email{
     padding-left: 74px;
 }
-
 .getNews form button {
     color: white;
     max-width: 100px;
     background-color: rgb(0, 0, 177);
 }
 .getNews form button:hover {
-    background-color: rgb(1, 1, 247);
     cursor: pointer;
+    background-color: rgb(1, 1, 247);
 }
-
-
-
-
 footer{
     padding-top: 30px;
     margin-top: 100px;
-    background-color: rgba(0,0,0,0.03);
     box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);
+    background-color: rgba(0,0,0,0.03);
 }
-
 footer div.container{
     width: fit-content;
     margin: 0px auto;
     display: grid;
-    grid-template-areas:
-    "aboutUs contactUS otherMidia payments aboutME"
-
-    /* "aboutUs contactUS otherMidia  aboutME" */
-    /* "aboutUs payments otherMidia  aboutME" */
-    
+    grid-template-areas: "aboutUs contactUS otherMidia payments aboutME" 
+   /* "aboutUs contactUS otherMidia aboutME" */
+   /* "aboutUs payments otherMidia aboutME" */
 }
-
 .aboutUs{
     grid-area: aboutUs;
-
 }
 .contactUS{
     grid-area: contactUS;
-
 }
 .otherMidia{
-    grid-area: otherMidia;
     width: 260px;
-
-
+    grid-area: otherMidia;
 }
 .payments{
     grid-area: payments;
-
 }
 .aboutME{
     grid-area: aboutME;
     padding-right: 50px;
 }
-
-
 footer section{
+    margin: 20px 20px;
     display:inline-block;
     vertical-align:middle;
-    margin: 20px 20px;
 }
-
 footer section.aboutUs{
-    background-color: #A83E3E;
-    padding: 30px 50px 50px;
-    color: white;
-    border-radius: 20px;
     width: 200px;
+    color: white;
+    padding: 30px 50px 50px;
+    border-radius: 20px;
+    background-color: #A83E3E;
 }
-
 footer section.aboutUs h3{
-    letter-spacing: 2px;
     margin-bottom: 10px;
+    letter-spacing: 2px;
 }
-
 footer section:not(.aboutUs){
     vertical-align:top;
 }
 footer section h4{
     margin-bottom: 10px;
-
 }
-
 footer .otherMidia{
-   position: relative; 
+    position: relative;
 }
-
 footer .appUS{
     margin-top: 70px ;
 }
 footer .appUS button{
-background: none;
-border: none
-;}
-
-footer .appUS img:hover,
-footer .payments img:hover{
-    cursor: pointer;
-    opacity:0.7 !important;
+    border: none;
+    background: none;
 }
-
-
+footer .appUS img:hover, footer .payments img:hover{
+    cursor: pointer;
+    opacity: 0.7 !important;
+}
 .payments img{
-    border-radius: 9px;
     border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 9px;
 }
 .aboutME a:hover{
-    color: red
-
+    color: red 
 }
