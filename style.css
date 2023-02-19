@@ -2,6 +2,11 @@
     font-family: Margarine-Regular;
     src: url(Assets/Margarine-Regular.ttf);
 }
+*{
+    --red-weight: #A83E3E;
+    --red-soft: #F47373;
+}
+
 
 /* 
 Proprieties organization
@@ -16,229 +21,185 @@ selecetor{
 */
 
 
-/* Header Style */
-.header-top {
+/* --------------------- */
+
+
+/* Header - first-section */
+.headerTop {
     display: flex;
     justify-content: space-evenly;
 
     position: fixed;
-    padding: 40px 0px 27px;
     top: 0;
     left: 0;
     right: 0;
     z-index: 2;
 
-    background-color: #ffffff;
+    padding: 40px 0px 27px;
     box-shadow :0px 0px 12px 0px rgba(0,0,0,0.2);
-}
+    background-color: #ffffff;
+} 
+    .headerTop__form {
+        width: fit-content;
+        border: 1px solid rgba(0,0,0,0.2);
+        border-radius: 5px;
+    }
 
-.header-top form {
-    width: fit-content;
-    border: 1px solid rgba(0,0,0,0.2);
-    border-radius: 5px;
-}
-.header-top form input {
-    padding: 10px 15px 12px;
-    width: 300px;
+    .headerTop__input {
+        width: 300px;
+        padding: 10px 15px 12px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
 
-    outline: none;
-    border: none;
-    border-radius: 5px;
+        font-size: 16px;
+    }
 
-    font-size: 16px;
-}
-.header-top form button {
-    padding: 0px 10px;
-    border: none;
-    border-left: 1px solid rgba(0,0,0,0.2);
-    background: none;
+    .headerTop__button {
+        padding: 0px 10px;
+        border: none;
+        border-left: 1px solid rgba(0,0,0,0.2);
+        background: none;
 
-    transition: 200ms;
-    vertical-align: middle;
-}
+        transition: 200ms;
+        vertical-align: middle;
+    }
 
-.header-top div {
-    margin: auto 0px;
-}
-.header-top div .header-icon  {
-    margin-left: 14px;
-    background-clip: text;
-    background-image: linear-gradient(
-        to top, #A83E3E 50%, #F47373 50%);
-    -webkit-background-clip: text;
+    .headerTop__groupIcon {
+        margin: auto 0px;
+    }
 
-    color: transparent;
-    font-size: 35px;
-    transition: 200ms;
-}
+    .headerTop__icon{
+        margin-left: 14px;
 
-.header-top div a:first-child .header-icon  {
-    color:#F47373 
-}
+        background-image: linear-gradient(to top, var(--red-weight) 50%, var(--red-soft) 50%);
+        background-clip: text;
+        -webkit-background-clip: text;
 
-.header-top form button:hover,
-.header-top .header-icon:hover{
-    color: #A83E3E;
-    cursor: pointer;
-}
+        color: transparent;
+        font-size: 35px;
+        transition: 200ms;
+    }
 
+    .headerTop__iconHeart{
+        color: var(--red-soft) 
+    }
+    
+    .headerTop__interact:hover {
+        color: var(--red-weight);
+        cursor: pointer;
+    }
 
-
-
-
-/* Header Style */
-
-
-header section ul li.menu:hover > ul.categoryList {
-    opacity: 1;
-    visibility: visible;
-    transition: visibility 0s, opacity 0.5s linear;
-}
-
-
-
-header section ul li > ul.categoryList {
-    display: block;
-    position: absolute;
-    top: 36px;
-    left: 25px;
-    z-index: 2;
-
-    opacity: 0;
-    visibility: hidden;
-    transition-delay: 0.5s;
-}
-
-header ul.categoryList > li {
-    display: block;
-    position: relative;
-    height: 21px;
-}
-
-header .categoryItem:hover ul.list {
-    opacity: 1;
-    visibility: visible;
-    transition: 0s;
-}
-
-header ul.categoryList ul {
-    position: absolute;
-    left: 179px;
-
-    opacity: 0;
-    visibility: hidden;
-    transition: 0s;
-}
-
-header ul.dogList {
-    bottom: 31px;
-}
-
-header ul.catList {
-    bottom: 72px;
-}
-
-header ul.rabbitList {
-    bottom: 113px;
-}
-
-header ul.ratList {
-    bottom: 154px;
-}
-
-header ul.fishList{
-    bottom: 195px;
-}
-
-header ul.birdList{
-    bottom: 236px;
-}
-
-header section ul li ul.list li {
-    display: block;
-    padding: 10px;
-    background-color: #F47373;
-}
-/*  */
-header section ul li ul.list li ul.list {
-    display: block;
-}
-
-header section ul.list li:hover{
-    background-color: #A83E3E;
-}
-
-header section ul.list li a{
-    padding: 0px 30px 0px 0px ;
-}
-
-header section ul.list li a:hover{
-    background-color: none;
-}
-
-/*  */
-
-/*  */
-header section:last-child{
+/* Header - second-section */
+.headerBottom{
     margin: 113px 0px 0px;
     height: 21px;
+
     padding: 15px 0px;
-    background-color: #F47373;
+    background-color: var(--red-soft);
 }
 
-header section:last-child button, 
-header section:last-child a {
-    margin-left: 30px;
-    height: 41px;
-    padding: 10px 20px;
+    .headerBottom__nav{
+        display: flex;
+        justify-content: space-around;
 
-    border: none;
-    background: none;
+        position: relative;
+    }
 
-    color: white;
-    font-size: 16px;
-    text-transform: uppercase;
+    /* second-section__cattegoty-button */
+    .headerBottom__cattegory{
+        position: relative;
+    }
+        .headerBottom__cattegoryItem:hover{
+            cursor: pointer;
+            color: var(--red-weight);
+        }
 
-    cursor: pointer;
-    transition: 0.4s;
-}
+        .iconArrow{
+            font-size: 18px;
+            vertical-align: middle;
+        }
 
-header section:last-child button{
-    position: absolute;
-    bottom: -10px;
-}
+        .iconThreeline{
+            font-size: 22px;
+            margin-right: 10px;
+            vertical-align: top;
 
-header section:last-child ul li.menu{
-    position: relative;
-}
+        }
 
-header section:last-child  li.menu > a:hover, 
-header section:last-child  nav li > a:hover{
-    background-color: #A83E3E;
-}
+        .showList--first:hover .headerBottom_list--first,
+        .showList--second:hover .headerBottom_list--second {
+            opacity: 1;
+            visibility: visible;
+        }
 
-header section:last-child span{
-    margin-right: 10px;
-    vertical-align: top;
-}
+        .showList--first:hover .headerBottom_list--first{
+            transition: visibility 0s, opacity 0.5s linear;
+        }
 
-header section:last-child nav{
-    display: flex;
-    justify-content: space-around;
-    position: relative;
-}
+        .showList--second:hover .headerBottom_list--second {
+            transition: 0s;
+        }
 
-header section:last-child ul li{
-    display: inline-block;
-}
+        .headerBottom_list{
+            position: absolute;
+            z-index: 2;
 
-header section:last-child a{
-    text-decoration: none;
-}
+            width: 180px;
+            background-color: var(--red-soft);
+        }
+
+        .headerBottom_list--first {
+            top: 36px;
+            left: -15px;
+
+            opacity: 0;
+            visibility: hidden;
+            transition-delay: 0.5s;
+        }
+
+        .headerBottom_list--second {
+            margin-top: -32.5px;
+            left: 180px;
+
+            opacity: 0;
+            visibility: hidden;
+            transition: 0s;
+        }
+
+    .headerBottom__linkButton{ 
+        display: inline-block;
+
+        margin-left: 30px;
+    }
+
+    .button:hover {
+        background-color: var(--red-weight);
+    }
+
+    .button {
+        max-height: 20px;
+        padding: 10px 20px;
+        background: none;
+
+        cursor: pointer;
+        list-style: none;
+        transition: 0.4s;
+    }
+
+    .button--style{
+        color: white;
+        font-size: 16px;
+        text-transform: uppercase;
+        text-decoration: none;
+        user-select: none;
+    }
+    .button--leftMargin{
+        margin-left: 12px;
+    }
 
 
-
-
+/* --------------------- */
 
 
 /* -----------------------------------------------------------------  */
@@ -345,7 +306,7 @@ main > section.flyers{
     padding: 20px 50px;
     position: relative;
     transform: rotate(-5deg);
-    background: linear-gradient( 180deg, #F47373 0%, #BF4545 100%);
+    background: linear-gradient( 180deg, var(--red-soft) 0%, #BF4545 100%);
     text-align: center;
     border-radius: 50%;
 }
@@ -361,7 +322,7 @@ main > section.flyers{
     padding: 15px;
     width: 190px;
     font-size: 20px;
-    background: #A83E3E;
+    background: var(--red-weight);
     font-family: Margarine-Regular;
     border-radius: 10px;
     letter-spacing: 5px;
@@ -388,7 +349,7 @@ main > section.flyers{
 }
 .carrosel button:hover{
     cursor: pointer;
-    background-color: #A83E3E;
+    background-color: var(--red-weight);
 }
 .carrosel button:first-child{
     margin-left: 40px;
@@ -543,7 +504,7 @@ main section.animalsCategory {
     font-weight: normal;
 }
 .product .review{
-    color:#A83E3E;
+    color:var(--red-weight);
     margin: 5px 20px auto 0px;
 }
 .product sup{
@@ -552,19 +513,19 @@ main section.animalsCategory {
 }
 .emoji{
     color: transparent;
-    text-shadow: 0 0 0 #A83E3E;
+    text-shadow: 0 0 0 var(--red-weight);
 }
 .services .product > p:last-child{
     width: 200px;
 }
 .product1 {
     grid-row: 1 / span 2;
-    border-bottom: 60px solid #A83E3E;
-    background-color: #A83E3E;
+    border-bottom: 60px solid var(--red-weight);
+    background-color: var(--red-weight);
 }
 .product1 .photo {
     padding: 80px;
-    background-color: #A83E3E;
+    background-color: var(--red-weight);
 }
 .getNews{
     color: white;
@@ -661,7 +622,7 @@ footer section.aboutUs{
     color: white;
     padding: 30px 50px 50px;
     border-radius: 20px;
-    background-color: #A83E3E;
+    background-color: var(--red-weight);
 }
 footer section.aboutUs h3{
     margin-bottom: 10px;
@@ -693,4 +654,88 @@ footer .appUS img:hover, footer .payments img:hover{
 }
 .aboutME a:hover{
     color: red 
+}
+
+
+
+
+
+
+
+
+
+
+
+.gocymer{
+    padding:20px;
+    color: white;
+    border-radius:20px;
+    border: 1px solid rgb(255, 255, 255);
+
+}
+.gocymerred{
+    background-color: red;
+    height: 100px;
+    transition: 2s;
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.2);
+    outline: 10px solid black;
+    transform: rotate(30deg);
+    margin: 10px;
+    border-radius: 100px;
+    display: flex;
+
+}
+
+.gocymergreen{
+    background-color: green;
+    height: 100px;
+    transition: 2s;
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.2);
+    outline: 10px solid black;
+    transform: rotate(30deg);
+    margin: 10px;
+    border-radius: 100px;
+    display: flex;
+
+}
+
+.gocymerthree{
+    background-color: purple;
+    height:200px;
+}
+
+
+
+
+
+
+
+
+
+
+.gocymertwo{
+    background-color: red;
+    height: 100px;
+    transition: 2s;
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.2);
+    outline: 10px solid black;
+    transform: rotate(30deg);
+    margin: 10px;
+    border-radius: 100px;
+    display: flex;
+}
+.gocymeryellow{
+    background-color: yellow;
+
+}
+.gocymertwo{
+    background-color: green;
+    height: 50px;
+    transition: none;
+    box-shadow: none;
+    outline: none;
+    transform: rotate(50deg);
+    margin: none;
+    border-radius: none;
+    display: none;
 }

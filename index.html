@@ -3,104 +3,111 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <link href="style.css" rel="stylesheet">
 
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="style.css" rel="stylesheet">
 
 </head>
 
 <body>
     <header>
-        <section class="header-top">
+        <section class="headerTop">
             <img height="35" src="Assets/Logo By- Victorhmszzero.png">
-            <form>
-                <input required type="search" placeholder="Busque produtos e serviços..." tabindex="0" />
-
-                <button tabindex="-1" type="submit">
-                    <span class="material-symbols-outlined">search</span>
-                </button>
+            <form class="headerTop__form">
+                <input class="headerTop__input" type="search" placeholder="Busque produtos e serviços..." required tabindex="0" />
+                <button class="headerTop__button headerTop__interact" type="submit" tabindex="-1"><span class="material-symbols-outlined">search</span></button>
             </form>
-            <div>
-                <a href="#" tabindex="0"><span class="header-icon material-symbols-outlined">favorite</span></a>
-                <a href="#" tabindex="0"><span class="header-icon material-symbols-outlined">shopping_cart</span></a>
-                <a href="#" tabindex="0"><span class="header-icon material-symbols-outlined">group</span></a>
+            <div class="headerTop__groupIcon">
+                <a href="#" tabindex="0"><span class="headerTop__icon headerTop__interact headerTop__iconHeart  material-symbols-outlined">favorite</span></a>
+                <a href="#" tabindex="0"><span class="headerTop__icon headerTop__interact material-symbols-outlined">shopping_cart</span></a>
+                <a href="#" tabindex="0"><span class="headerTop__icon headerTop__interact material-symbols-outlined">group</span></a>
             </div>
         </section>
-        <section class="header-bottom">
-            <nav>
+        <section class="headerBottom">
+            <nav class="headerBottom__nav">
+                <div class="headerBottom__cattegory showList--first">
+                    <p class="headerBottom__cattegoryItem button--style" href="#" tabindex="0">
+                        <span class="iconThreeline material-symbols-outlined">menu</span>
+                        Categorias
+                        <span class="iconArrow material-symbols-outlined">expand_more</span>
+                    </p>
+                    
+                    <ul class="headerBottom_list headerBottom_list--first">
+                        <li class="button showList--second">
+                            <a class="button--style button--leftMargin" href="#" tabindex="0">
+                                Cães <span class="iconArrow material-symbols-outlined">chevron_right</span></a>
+                                <ul class="headerBottom_list headerBottom_list--second">
+                                <li class="button"><a class="button--style button--leftMargin" href="#" tabindex="0">Cães</a></li>
+                                <li class="button"><a class="button--style button--leftMargin" href="#" tabindex="0">Cães</a></li>
+                                <li class="button"><a class="button--style button--leftMargin" href="#" tabindex="0">Cães</a></li>
+                                <li class="button"><a class="button--style button--leftMargin" href="#" tabindex="0">Cães</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="button showList--second">
+                            <a class="button--style button--leftMargin" href="#" tabindex="0">
+                                Gatos <span class="iconArrow material-symbols-outlined">chevron_right</span></a>
+
+                            <ul class="headerBottom_list headerBottom_list--second">
+                                <li class="button"><a class="button--style button--leftMargin" href="#" tabindex="0">Gatos</a></li>
+                                <li class="button"><a class="button--style button--leftMargin" href="#" tabindex="0">Gatos</a></li>
+                                <li class="button"><a class="button--style button--leftMargin" href="#" tabindex="0">Gatos</a></li>
+                                <li class="button"><a class="button--style button--leftMargin" href="#" tabindex="0">Gatos</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="button showList--second">
+                            <a class="button--style button--leftMargin" href="#" tabindex="0">
+                                Coelhos <span class="iconArrow material-symbols-outlined">chevron_right</span></a>
+                            <ul class="headerBottom_list headerBottom_list--second">
+                                <li class="button"><a class="button--style button--leftMargin" href="#" tabindex="0">Coelhos</a></li>
+                                <li class="button"><a class="button--style button--leftMargin" href="#" tabindex="0">Coelhos</a></li>
+                                <li class="button"><a class="button--style button--leftMargin" href="#" tabindex="0">Coelhos</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="button showList--second">
+                            <a class="button--style button--leftMargin" href="#" tabindex="0">
+                                Roeadores <span class="iconArrow material-symbols-outlined">chevron_right</span></a>
+                            <ul class="headerBottom_list headerBottom_list--second">
+                                <li class="button"><a class="button--style button--leftMargin" href="#" tabindex="0">Roeadores</a></li>
+                                <li class="button"><a class="button--style button--leftMargin" href="#" tabindex="0">Roeadores</a></li>
+                                <li class="button"><a class="button--style button--leftMargin" href="#" tabindex="0">Roeadores</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="button showList--second">
+                            <a class="button--style button--leftMargin" href="#" tabindex="0">
+                                Peixes <span class="iconArrow material-symbols-outlined">chevron_right</span></a>
+                            <ul class="headerBottom_list headerBottom_list--second">
+                                <li class="button"><a class="button--style button--leftMargin" href="#" tabindex="0">Peixes</a></li>
+                                <li class="button"><a class="button--style button--leftMargin" href="#" tabindex="0">Peixes</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="button showList--second">
+                            <a class="button--style button--leftMargin" href="#" tabindex="0">
+                                Passaros <span class="iconArrow material-symbols-outlined">chevron_right</span></a>
+                            <ul class="headerBottom_list headerBottom_list--second">
+                                <li class="button"><a class="button--style button--leftMargin" href="#" tabindex="0">Passaros</a></li>
+                                <li class="button"><a class="button--style button--leftMargin" href="#" tabindex="0">Passaros</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
                 <ul>
-                    <li class="menu">
-                        <a href="#" tabindex="0"><span class="material-symbols-outlined ">menu </span>Categorias</a>
-                        <ul class="categoryList list">
-                            <li class="categoryItem">
-                                <a href="#" tabindex="0">Cães</a>
-                                <ul class="dogList list">
-                                    <li><a href="#" tabindex="0">Cães</a></li>
-                                    <li><a href="#" tabindex="0">Cães</a></li>
-                                    <li><a href="#" tabindex="0">Cães</a></li>
-                                    <li><a href="#" tabindex="0">Cães</a></li>
-                                </ul>
-                            </li>
-                            <li class="categoryItem">
-                                <a href="#" tabindex="0">Gatos</a>
-                                <ul class="catList list">
-                                    <li><a href="#" tabindex="0">Gatos</a></li>
-                                    <li><a href="#" tabindex="0">Gatos</a></li>
-                                    <li><a href="#" tabindex="0">Gatos</a></li>
-                                    <li><a href="#" tabindex="0">Gatos</a></li>
-                                </ul>
-                            </li>
-                            <li class="categoryItem">
-                                <a href="#" tabindex="0">Coelhos</a>
-                                <ul class="rabbitList list">
-                                    <li><a href="#" tabindex="0">Coelhos</a></li>
-                                    <li><a href="#" tabindex="0">Coelhos</a></li>
-                                    <li><a href="#" tabindex="0">Coelhos</a></li>
-                                    <li><a href="#" tabindex="0">Coelhos</a></li>
-                                </ul>
-                            </li>
-                            <li class="categoryItem">
-                                <a href="#" tabindex="0">Roeadores</a>
-                                <ul class="ratList list">
-                                    <li><a href="#" tabindex="0">Roeadores</a></li>
-                                    <li><a href="#" tabindex="0">Roeadores</a></li>
-                                    <li><a href="#" tabindex="0">Roeadores</a></li>
-                                    <li><a href="#" tabindex="0">Roeadores</a></li>
-                                </ul>
-                            </li>
-                            <li class="categoryItem">
-                                <a href="#" tabindex="0">Peixes</a>
-                                <ul class="fishList list">
-                                    <li><a href="#" tabindex="0">Peixes</a></li>
-                                    <li><a href="#" tabindex="0">Peixes</a></li>
-                                    <li><a href="#" tabindex="0">Peixes</a></li>
-                                    <li><a href="#" tabindex="0">Peixes</a></li>
-                                </ul>
-                            </li>
-                            <li class="categoryItem">
-                                <a href="#" tabindex="0">Passaros</a>
-                                <ul class="birdList list">
-                                    <li><a href="#" tabindex="0">Passaros</a></li>
-                                    <li><a href="#" tabindex="0">Passaros</a></li>
-                                    <li><a href="#" tabindex="0">Passaros</a></li>
-                                    <li><a href="#" tabindex="0">Passaros</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul>
-                    <li><a href="#" class="gradient-text">Loja</a></li>
-                    <li><a href="#">Serviços</a></li>
-                    <li><a href="#">Adoção</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li class="headerBottom__linkButton"><a class="button button--style" href="#" tabindex="0">Loja</a></li>
+                    <li class="headerBottom__linkButton"><a class="button button--style" href="#" tabindex="0">Serviços</a></li>
+                    <li class="headerBottom__linkButton"><a class="button button--style" href="#" tabindex="0">Adoção</a></li>
+                    <li class="headerBottom__linkButton"><a class="button button--style" href="#" tabindex="0">Contato</a></li>
                 </ul>
             </nav>
         </section>
     </header>
-
+    
     <main>
         <section class="carrosel">
             <button tabindex="0" tabindex="0">&lt;</button>
@@ -380,6 +387,18 @@
 
         </div>
     </footer>
+
+
+
+
+    <button class="gocymer gocymerred">CLIQUE AQUI</button>
+    <button class="gocymer gocymergreen">CLIQUE AQUI</button>
+    <button class="gocymer gocymerthree">CLIQUE AQUI</button>
+
+    <button class="gocymer gocymertwo">CLIQUE AQUI</button>
+    <button class="gocymer gocymertwo gocymeryellow">CLIQUE AQUI</button>
+    <button class="gocymer gocymerthree">CLIQUE AQUI</button>
+
 </body>
 
 </html>
