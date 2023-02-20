@@ -1,5 +1,9 @@
 <html lang="pt-bt">
-
+<!--
+    #petround-index.html 
+    version - 1.0
+    author - victor_vhms | https://github.com/victorhmszzero
+-->
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
@@ -10,336 +14,359 @@
     <link href="style.css" rel="stylesheet">
 
 </head>
-
 <body>
     <header>
-        <section class="headerTop">
+        <section class="header-top">
             <img height="35" src="Assets/Logo By- Victorhmszzero.png">
-            <form class="headerTop__form">
-                <input class="headerTop__input" type="search" placeholder="Busque produtos e serviços..." required tabindex="0" />
-                <button class="headerTop__button headerTop__interact" type="submit" tabindex="-1"><span class="material-symbols-outlined">search</span></button>
+            <form class="header-top__form">
+                <input class="header-top__input" type="search" placeholder="Busque produtos e serviços..." required tabindex="0" />
+                <button class="header-top__button" type="submit" tabindex="-1"><span class="material-symbols-outlined">search</span></button>
             </form>
-            <div class="headerTop__groupIcon">
-                <a href="#" tabindex="0"><span class="headerTop__icon headerTop__interact headerTop__iconHeart  material-symbols-outlined">favorite</span></a>
-                <a href="#" tabindex="0"><span class="headerTop__icon headerTop__interact material-symbols-outlined">shopping_cart</span></a>
-                <a href="#" tabindex="0"><span class="headerTop__icon headerTop__interact material-symbols-outlined">group</span></a>
+            <div class="header-top__container">
+                <a href="#" tabindex="0"><span class="header-top__icon-base header-top__icon-heart material-symbols-outlined">favorite</span></a>
+                <a href="#" tabindex="0"><span class="header-top__icon-base material-symbols-outlined">shopping_cart</span></a>
+                <a href="#" tabindex="0"><span class="header-top__icon-base material-symbols-outlined">group</span></a>
             </div>
         </section>
-        <section class="headerBottom">
-            <nav class="headerBottom__nav">
-                <div class="headerBottom__cattegory showList--first">
-                    <p class="headerBottom__cattegoryItem button--style" href="#" tabindex="0">
-                        <span class="iconThreeline material-symbols-outlined">menu</span>
+        <!-- -->
+        <section class="header-down">
+            <nav class="header-down__nav">
+                <div class="header-down__container  header-down__container-parent">
+
+                    <p class="header-down__item  header-down__item--menu" href="#" tabindex="0">
+                        <span class="header-down__icon-menu  material-symbols-outlined">menu</span>
                         Categorias
-                        <span class="iconArrow material-symbols-outlined">expand_more</span>
+                        <span class="header-down__icon-menu  material-symbols-outlined">expand_more</span>
                     </p>
                     
-                    <ul class="headerBottom_list headerBottom_list--first">
-                        <li class="button showList--second">
-                            <a class="button--style button--leftMargin" href="#" tabindex="0">
-                                Cães <span class="iconArrow material-symbols-outlined">chevron_right</span></a>
-                                <ul class="headerBottom_list headerBottom_list--second">
-                                <li class="button"><a class="button--style button--leftMargin" href="#" tabindex="0">Cães</a></li>
-                                <li class="button"><a class="button--style button--leftMargin" href="#" tabindex="0">Cães</a></li>
-                                <li class="button"><a class="button--style button--leftMargin" href="#" tabindex="0">Cães</a></li>
-                                <li class="button"><a class="button--style button--leftMargin" href="#" tabindex="0">Cães</a></li>
+                    <ul class="header-down__list-menu  header-down__list-menu--parent">
+                        <li class="header-down__button header-down__container--child">
+                            <a class="header-down__item  header-down__item--margin" href="#" tabindex="0">
+                                Cães <span class="header-down__icon-arrow  material-symbols-outlined">chevron_right</span>
+                            </a>
+                            <ul class="header-down__list-menu  header-down__list-menu--child">
+                                <li class="header-down__button"><a class="header-down__item  header-down__item--margin" href="#" tabindex="0">Cães</a></li>
+                                <li class="header-down__button"><a class="header-down__item  header-down__item--margin" href="#" tabindex="0">Cães</a></li>
+                                <li class="header-down__button"><a class="header-down__item  header-down__item--margin" href="#" tabindex="0">Cães</a></li>
+                                <li class="header-down__button"><a class="header-down__item  header-down__item--margin" href="#" tabindex="0">Cães</a></li>
+                            </ul>
+                        </li>
+                        <li class="header-down__button header-down__container--child">
+                            <a class="header-down__item  header-down__item--margin" href="#" tabindex="0">
+                                Gatos <span class="header-down__icon-arrow  material-symbols-outlined">chevron_right</span>
+                            </a>
+                            <ul class="header-down__list-menu  header-down__list-menu--child">
+                                <li class="header-down__button"><a class="header-down__item  header-down__item--margin" href="#" tabindex="0">Gatos</a></li>
+                                <li class="header-down__button"><a class="header-down__item  header-down__item--margin" href="#" tabindex="0">Gatos</a></li>
+                                <li class="header-down__button"><a class="header-down__item  header-down__item--margin" href="#" tabindex="0">Gatos</a></li>
+                                <li class="header-down__button"><a class="header-down__item  header-down__item--margin" href="#" tabindex="0">Gatos</a></li>
                             </ul>
                         </li>
 
-                        <li class="button showList--second">
-                            <a class="button--style button--leftMargin" href="#" tabindex="0">
-                                Gatos <span class="iconArrow material-symbols-outlined">chevron_right</span></a>
-
-                            <ul class="headerBottom_list headerBottom_list--second">
-                                <li class="button"><a class="button--style button--leftMargin" href="#" tabindex="0">Gatos</a></li>
-                                <li class="button"><a class="button--style button--leftMargin" href="#" tabindex="0">Gatos</a></li>
-                                <li class="button"><a class="button--style button--leftMargin" href="#" tabindex="0">Gatos</a></li>
-                                <li class="button"><a class="button--style button--leftMargin" href="#" tabindex="0">Gatos</a></li>
+                        <li class="header-down__button header-down__container--child">
+                            <a class="header-down__item  header-down__item--margin" href="#" tabindex="0">
+                                Gatos <span class="header-down__icon-arrow  material-symbols-outlined">chevron_right</span>
+                            </a>
+                            <ul class="header-down__list-menu  header-down__list-menu--child">
+                                <li class="header-down__button"><a class="header-down__item  header-down__item--margin" href="#" tabindex="0">Gatos</a></li>
+                                <li class="header-down__button"><a class="header-down__item  header-down__item--margin" href="#" tabindex="0">Gatos</a></li>
+                                <li class="header-down__button"><a class="header-down__item  header-down__item--margin" href="#" tabindex="0">Gatos</a></li>
+                                <li class="header-down__button"><a class="header-down__item  header-down__item--margin" href="#" tabindex="0">Gatos</a></li>
                             </ul>
                         </li>
 
-                        <li class="button showList--second">
-                            <a class="button--style button--leftMargin" href="#" tabindex="0">
-                                Coelhos <span class="iconArrow material-symbols-outlined">chevron_right</span></a>
-                            <ul class="headerBottom_list headerBottom_list--second">
-                                <li class="button"><a class="button--style button--leftMargin" href="#" tabindex="0">Coelhos</a></li>
-                                <li class="button"><a class="button--style button--leftMargin" href="#" tabindex="0">Coelhos</a></li>
-                                <li class="button"><a class="button--style button--leftMargin" href="#" tabindex="0">Coelhos</a></li>
+                        <li class="header-down__button header-down__container--child">
+                            <a class="header-down__item  header-down__item--margin" href="#" tabindex="0">
+                                Gatos <span class="header-down__icon-arrow  material-symbols-outlined">chevron_right</span>
+                            </a>
+                            <ul class="header-down__list-menu  header-down__list-menu--child">
+                                <li class="header-down__button"><a class="header-down__item  header-down__item--margin" href="#" tabindex="0">Gatos</a></li>
+                                <li class="header-down__button"><a class="header-down__item  header-down__item--margin" href="#" tabindex="0">Gatos</a></li>
+                                <li class="header-down__button"><a class="header-down__item  header-down__item--margin" href="#" tabindex="0">Gatos</a></li>
+                                <li class="header-down__button"><a class="header-down__item  header-down__item--margin" href="#" tabindex="0">Gatos</a></li>
                             </ul>
                         </li>
 
-                        <li class="button showList--second">
-                            <a class="button--style button--leftMargin" href="#" tabindex="0">
-                                Roeadores <span class="iconArrow material-symbols-outlined">chevron_right</span></a>
-                            <ul class="headerBottom_list headerBottom_list--second">
-                                <li class="button"><a class="button--style button--leftMargin" href="#" tabindex="0">Roeadores</a></li>
-                                <li class="button"><a class="button--style button--leftMargin" href="#" tabindex="0">Roeadores</a></li>
-                                <li class="button"><a class="button--style button--leftMargin" href="#" tabindex="0">Roeadores</a></li>
+                        <li class="header-down__button header-down__container--child">
+                            <a class="header-down__item  header-down__item--margin" href="#" tabindex="0">
+                                Gatos <span class="header-down__icon-arrow  material-symbols-outlined">chevron_right</span>
+                            </a>
+                            <ul class="header-down__list-menu  header-down__list-menu--child">
+                                <li class="header-down__button"><a class="header-down__item  header-down__item--margin" href="#" tabindex="0">Gatos</a></li>
+                                <li class="header-down__button"><a class="header-down__item  header-down__item--margin" href="#" tabindex="0">Gatos</a></li>
+                                <li class="header-down__button"><a class="header-down__item  header-down__item--margin" href="#" tabindex="0">Gatos</a></li>
+                                <li class="header-down__button"><a class="header-down__item  header-down__item--margin" href="#" tabindex="0">Gatos</a></li>
                             </ul>
                         </li>
 
-                        <li class="button showList--second">
-                            <a class="button--style button--leftMargin" href="#" tabindex="0">
-                                Peixes <span class="iconArrow material-symbols-outlined">chevron_right</span></a>
-                            <ul class="headerBottom_list headerBottom_list--second">
-                                <li class="button"><a class="button--style button--leftMargin" href="#" tabindex="0">Peixes</a></li>
-                                <li class="button"><a class="button--style button--leftMargin" href="#" tabindex="0">Peixes</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="button showList--second">
-                            <a class="button--style button--leftMargin" href="#" tabindex="0">
-                                Passaros <span class="iconArrow material-symbols-outlined">chevron_right</span></a>
-                            <ul class="headerBottom_list headerBottom_list--second">
-                                <li class="button"><a class="button--style button--leftMargin" href="#" tabindex="0">Passaros</a></li>
-                                <li class="button"><a class="button--style button--leftMargin" href="#" tabindex="0">Passaros</a></li>
+                        <li class="header-down__button header-down__container--child">
+                            <a class="header-down__item  header-down__item--margin" href="#" tabindex="0">
+                                Gatos <span class="header-down__icon-arrow  material-symbols-outlined">chevron_right</span>
+                            </a>
+                            <ul class="header-down__list-menu  header-down__list-menu--child">
+                                <li class="header-down__button"><a class="header-down__item  header-down__item--margin" href="#" tabindex="0">Gatos</a></li>
+                                <li class="header-down__button"><a class="header-down__item  header-down__item--margin" href="#" tabindex="0">Gatos</a></li>
+                                <li class="header-down__button"><a class="header-down__item  header-down__item--margin" href="#" tabindex="0">Gatos</a></li>
+                                <li class="header-down__button"><a class="header-down__item  header-down__item--margin" href="#" tabindex="0">Gatos</a></li>
                             </ul>
                         </li>
 
                     </ul>
                 </div>
                 <ul>
-                    <li class="headerBottom__linkButton"><a class="button button--style" href="#" tabindex="0">Loja</a></li>
-                    <li class="headerBottom__linkButton"><a class="button button--style" href="#" tabindex="0">Serviços</a></li>
-                    <li class="headerBottom__linkButton"><a class="button button--style" href="#" tabindex="0">Adoção</a></li>
-                    <li class="headerBottom__linkButton"><a class="button button--style" href="#" tabindex="0">Contato</a></li>
+                    <li class="header-down__list-button"><a class="header-down__item  header-down__button" href="#" tabindex="0">Loja</a></li>
+                    <li class="header-down__list-button"><a class="header-down__item  header-down__button" href="#" tabindex="0">Adoção</a></li>
+                    <li class="header-down__list-button"><a class="header-down__item  header-down__button" href="#" tabindex="0">Serviços</a></li>
+                    <li class="header-down__list-button"><a class="header-down__item  header-down__button" href="#" tabindex="0">Contato</a></li>
                 </ul>
             </nav>
         </section>
     </header>
-    
+    <!-- -->
     <main>
-        <section class="carrosel">
-            <button tabindex="0" tabindex="0">&lt;</button>
-            <a class="bannerclickArea" tabindex="0"></a>
-            <div class="box">
-                <p>Produtos Exclusivos</p>
-                <p>Agora é a rodada do seu Pet!</p>
-                <p><span> Eu quero</span></p>
+        <section class="carrosel banner__area--shadow">
+            <button class="carrosel__btn carrosel__btn--left" tabindex="0">&lt;</button>
+            <a class="carrosel__area" tabindex="0"></a>
+            <div class="box-circle">
+                <p class="box-circle__item box-circle__item--emphasis">Produtos Exclusivos</p>
+                <p class="box-circle__item">Agora é a rodada do seu Pet!</p>
+                <p class="box-circle__item box-circle__item--small"><span class="box-circle__item--button">Eu quero</span></p>
             </div>
-            <img src="Assets/Home/DogAndCat.png" />
-            <button tabindex="0">&gt;</button>
+            <img class="carrosel__img" src="Assets/Home/DogAndCat.png"/>
+            <button class="carrosel__btn carrosel__btn--right" tabindex="0">&gt;</button>
         </section>
         <!-- -->
-        <section class="flyers">
-            <a class="sectionLeft" tabindex="0">
-                <div class="box">
-                    <p> Economize</p>
-                    <p>Na primeira compra</p>
-                    <p><span>Saiba Mais</span></p>
+        <section class="banner">
+            <a class="banner__area banner__area--first banner__area--shadow" tabindex="0">
+                <div class="box-circle box-circle--banner">
+                    <p class="box-circle__item box-circle__item--emphasis">Economize</p>
+                    <p class="box-circle__item">Na primeira compra</p>
+                    <p class="box-circle__item box-circle__item--small"><span class="box-circle__item--button">Saiba Mais</span></p>
                 </div>
-                <img src="Assets/Home/economizeCompra.png" />
+                <img class="banner__img banner__img--picture1" src="Assets/Home/economizeCompra.png" />
             </a>
-            <!-- -->
-            <a class="sectionRight" tabindex="0">
-                <div class="box">
-                    <p> Adote um Pet</p>
-                    <p> Diretamente no site</p>
-                    <p><span>Saiba Mais</span></p>
+            <a class="banner__area banner__area--second banner__area--shadow" tabindex="0">
+                <div class="box-circle box-circle--banner">
+                    <p class="box-circle__item box-circle__item--emphasis"> Adote um Pet</p>
+                    <p class="box-circle__item"> Diretamente no site</p>
+                    <p class="box-circle__item box-circle__item--small"><span class="box-circle__item--button">Saiba Mais</span></p>
                 </div>
-                <img src="Assets/Home/dog1.png" />
+                <img class="banner__img banner__img--picture2" src="Assets/Home/dog1.png" />
             </a>
         </section>
         <!-- -->
-        <section class="animalsCategory ">
-            <a class="animalsIcon" tabindex="0">
-                <div class="circleIcon">
-                    <img src="Assets/Home/circleDog.png" />
+        <section class="section-pets ">
+            <a class="section-pets__area" tabindex="0">
+                <div class="section-pets__container">
+                    <img class="section-pets__img" src="Assets/Home/circleDog.png" />
                 </div>
                 <p>Cachorros</p>
             </a>
-            <a class="animalsIcon" tabindex="0">
-                <div class="circleIcon">
-                    <img src="Assets/Home/circleCat.png" />
+            <a class="section-pets__area" tabindex="0">
+                <div class="section-pets__container">
+                    <img class="section-pets__img"src="Assets/Home/circleCat.png" />
                 </div>
                 <p>Gatos</p>
             </a>
-            <a class="animalsIcon" tabindex="0">
-                <div class="circleIcon">
-                    <img src="Assets/Home/circleRabbit.jpg" />
+            <a class="section-pets__area" tabindex="0">
+                <div class="section-pets__container">
+                    <img class="section-pets__img" src="Assets/Home/circleRabbit.jpg" />
                 </div>
                 <p>Coelhos</p>
             </a>
-            <a class="animalsIcon" tabindex="0">
-                <div class="circleIcon">
-                    <img src="Assets/Home/circleRat.jpg" />
+            <a class="section-pets__area" tabindex="0">
+                <div class="section-pets__container">
+                    <img class="section-pets__img" src="Assets/Home/circleRat.jpg" />
                 </div>
                 <p>Roedores</p>
             </a>
-            <a class="animalsIcon" tabindex="0">
-                <div class="circleIcon">
-                    <img src="Assets/Home/circleFish.jpg" />
+            <a class="section-pets__area" tabindex="0">
+                <div class="section-pets__container">
+                    <img class="section-pets__img" src="Assets/Home/circleFish.jpg" />
                 </div>
                 <p>Peixes</p>
             </a>
-            <a class="animalsIcon" tabindex="0">
-                <div class="circleIcon">
-                    <img src="Assets/Home/circleBird.jpg" />
+            <a class="section-pets__area" tabindex="0">
+                <div class="section-pets__container">
+                    <img class="section-pets__img" src="Assets/Home/circleBird.jpg" />
                 </div>
                 <p>Passaros</p>
             </a>
         </section>
         <!-- -->
-        <div class="sectionStore">
-            <h3>Produtos populares</h3>
-            <section class="section5 flex">
+        <div class="store">
+            <h3 class="store__title">Produtos populares</h3>
+            <section class="store__products-group">
+                
                 <a class="product" tabindex="0">
-                    <div class="picture p1"></div>
-                    <div class="header">
-                        <p>R$ 6<sup>99</sup></p>
-                        <p class="review"><span class="emoji">⭐</span>4.9 </p>
+                    <div class="product__picture product__picture--01"></div>
+                    <div class="product__details">
+                        <p class="product__price product__description">R$ 6<sup class="product__cents">99</sup></p>
+                        <p class="product__score"><span class="product__star-icon">⭐</span>4.9 </p>
                     </div>
-                    <p>Snack Cat Licious Para Gatos Dental - 40g</p>
+                    <p class="product__description">Snack Cat Licious Para Gatos Dental - 40g</p>
                 </a>
                 <a class="product" tabindex="0">
-                    <div class="picture p2"></div>
-                    <div class="header">
-                        <p><span>R$ 129<sup>40</sup></span></p>
-                        <p class="review"><span class="emoji">⭐</span>4.7 </p>
+                    <div class="product__picture product__picture--02"></div>
+                    <div class="product__details">
+                        <p class="product__price product__description"><span>R$ 129<sup class="product__cents">40</sup></span></p>
+                        <p class="product__score"><span class="product__star-icon">⭐</span>4.7 </p>
                     </div>
-                    <p>Ração Golden Seleção Natural Cães - 10,1kg</p>
+                    <p class="product__description">Ração Golden Seleção Natural Cães - 10,1kg</p>
                 </a>
                 <a class="product" tabindex="0">
-                    <div class="picture p3"></div>
-                    <div class="header">
-                        <p><span>R$ 8<sup>59</sup></span></p>
-                        <p class="review"><span class="emoji">⭐</span>4.2 </p>
+                    <div class="product__picture product__picture--03"></div>
+                    <div class="product__details">
+                        <p class="product__price product__description"><span>R$ 8<sup class="product__cents">59</sup></span></p>
+                        <p class="product__score"><span class="product__star-icon">⭐</span>4.2 </p>
                     </div>
-                    <p>Ração Úmida Premier Gourmet Para Cães - 85g</p>
+                    <p class="product__description">Ração Úmida Premier Gourmet Para Cães - 85g</p>
                 </a>
                 <a class="product" tabindex="0">
-                    <div class="picture p4"></div>
-                    <div class="header">
-                        <p><span>R$ 29<sup>90</sup></span></p>
-                        <p class="review"><span class="emoji">⭐</span>4.7 </p>
+                    <div class="product__picture product__picture--04"></div>
+                    <div class="product__details">
+                        <p class="product__price product__description"><span>R$ 29<sup class="product__cents">90</sup></span></p>
+                        <p class="product__score"><span class="product__star-icon">⭐</span>4.7 </p>
                     </div>
-                    <p>Osso Bonapet Natural Fêmur Para Cães</p>
+                    <p class="product__description">Osso Bonapet Natural Fêmur Para Cães</p>
                 </a>
                 <a class="product" tabindex="0">
-                    <div class="picture p5"></div>
-                    <div class="header">
-                        <p><span>R$ 19<sup>99</sup></span></p>
-                        <p class="review"><span class="emoji">⭐</span>4.0</p>
+                    <div class="product__picture product__picture--05"></div>
+                    <div class="product__details">
+                        <p class="product__price product__description"><span>R$ 19<sup class="product__cents">99</sup></span></p>
+                        <p class="product__score"><span class="product__star-icon">⭐</span>4.0</p>
                     </div>
-                    <p>Ração para Coelhos Pacote Supra - 5kg</p>
+                    <p class="product__description">Ração para Coelhos Pacote Supra - 5kg</p>
                 </a>
-                <a class="product product1">
-                    <div class="photo"></div>
+                <a class="product product--large">
+                    <div class="product__banner"></div>
+                </a>
+
+            </section>
+        </div>
+        <!-- -->
+        <div class="store">
+            <h3 class="store__title">Serviços populares</h3>
+            <section class="store__products-group  store__services">
+
+                <a class="product product--large">
+                    <div class="product__banner"></div>
+                </a>
+                <a class="product" tabindex="0">
+                    <div class="product__picture product__picture--001"></div>
+                    <div class="product__details">
+                        <p class="product__price product__description"><span>R$ 50<sup class="product__cents">00</sup></span></p>
+                        <p class="product__score"><span class="product__star-icon">⭐</span>4.2 </p>
+                    </div>
+                    <p class="product__description">Passeio - 50min</p>
+                </a>
+                <a class="product" tabindex="0">
+                    <div class="product__picture product__picture--002"></div>
+                    <div class="product__details">
+                        <p class="product__price product__description"><span>R$ 76<sup class="product__cents">00</sup></span></p>
+                        <p class="product__score"><span class="product__star-icon">⭐</span>4.2 </p>
+                    </div>
+                    <p class="product__description">Tosa completa</p>
+                </a>
+                <a class="product" tabindex="0">
+                    <div class="product__picture product__picture--003"></div>
+                    <div class="product__details">
+                        <p class="product__price product__description"><span>R$ 32<sup class="product__cents">20</sup></span></p>
+                        <p class="product__score"><span class="product__star-icon">⭐</span>4.2 </p>
+                    </div>
+                    <p class="product__description">Cortar unha</p>
+                </a>
+                <a class="product" tabindex="0">
+                    <div class="product__picture product__picture--004"></div>
+                    <div class="product__details">
+                        <p class="product__price product__description"><span>R$ 120<sup class="product__cents">50</sup></span></p>
+                        <p class="product__score"><span class="product__star-icon">⭐</span>4.2 </p>
+                    </div>
+                    <p class="product__description">Veterinario</p>
+                </a>
+                <a class="product" tabindex="0">
+                    <div class="product__picture product__picture--005"></div>
+                    <div class="product__details">
+                        <p class="product__price product__description"><span>R$ 62<sup class="product__cents">90</sup></span></p>
+                        <p class="product__score"><span class="product__star-icon">⭐</span>4.2 </p>
+                    </div>
+                    <p class="product__description">Hidratação</p>
                 </a>
             </section>
         </div>
         <!-- -->
-        <div class="sectionStore">
-            <h3>Serviços populares</h3>
-            <section class="section5 flex services">
-
-
-                <div class="product product1 pp2">
-                    <div class="photo"></div>
+        <section class="get-news">
+            <form class="get-news__form">
+                <h3 class="get-news__text">Receba <br>novidades</h3>
+                <div class="get-news__container" tabindex="">
+                    <label class="get-news__label" for="name">Nome:</label>
+                    <input class="get-news__button  get-news__button--name" id="name" type="text" placeholder="Petround" required>
                 </div>
-
-
-
-                <a class="product " tabindex="0">
-                    <div class="picture pp1"></div>
-                    <div class="header">
-                        <p><span>R$ 50<sup>00</sup></span></p>
-                        <p class="review"><span class="emoji">⭐</span>4.2 </p>
-                    </div>
-                    <p>Passeio - 50min</p>
-                </a>
-
-                <a class="product" tabindex="0">
-                    <div class="picture pp2"></div>
-                    <div class="header">
-                        <p><span>R$ 76<sup>00</sup></span></p>
-                        <p class="review"><span class="emoji">⭐</span>4.2 </p>
-                    </div>
-                    <p>Tosa completa</p>
-                </a>
-                <a class="product" tabindex="0">
-                    <div class="picture pp3"></div>
-                    <div class="header">
-                        <p><span>R$ 32<sup>20</sup></span></p>
-                        <p class="review"><span class="emoji">⭐</span>4.2 </p>
-                    </div>
-                    <p>Cortar unha</p>
-                </a>
-                <a class="product" tabindex="0">
-                    <div class="picture pp4"></div>
-                    <div class="header">
-                        <p><span>R$ 120<sup>50</sup></span></p>
-                        <p class="review"><span class="emoji">⭐</span>4.2 </p>
-                    </div>
-                    <p>Veterinario</p>
-                </a>
-                <a class="product" tabindex="0">
-                    <div class="picture pp5"></div>
-                    <div class="header">
-                        <p><span>R$ 62<sup>90</sup></span></p>
-                        <p class="review"><span class="emoji">⭐</span>4.2 </p>
-                    </div>
-                    <p>Hidratação</p>
-                </a>
-            </section>
-        </div>
-        <!-- -->
-        <section class="getNews">
-            <form>
-                <h3>Receba <br>novidades</h3>
-                <div tabindex="">
-                    <label for="name">Nome:</label>
-                    <input id="name" type="text" placeholder="Petround" required>
+                <div class="get-news__container" tabindex="">
+                    <label class="get-news__label" for="email">E-mail:</label>
+                    <input class="get-news__button  get-news__button--email" id="email" type="email" placeholder="mail@petround.com.br" required>
                 </div>
-                <div tabindex="">
-                    <label for="email">E-mail:</label>
-                    <input id="email" type="email" placeholder="mail@petround.com.br" required>
-                </div>
-                <button type="submmit">Enviar</button>
+                <button class="get-news__button  get-news__button--submmit"type="submmit">Enviar</button>
             </form>
         </section>
     </main>
-    <footer>
-        <div class="container">
-            <section class="aboutUs">
-                <h3>Conheça mais <br>sobre o projeto</h3>
+    <footer class="footer">
+        <div class="footer__container-group">
+            <section class="footer__container  footer__container--meet-project">
+                <h3 class="footer__title  footer__title--spacing">Conheça mais <br>sobre o projeto</h3>
                 <p>Nó projeto academico <b>Petround</b> é possivel simular compras, visualizar produtos e serviços,
                     assim como se cadastrar para receber e-mails</p>
             </section>
-
-            <section class="contactUS">
-                <h4>Atendimento</h4>
+            <section class="footer__container  footer__container--contact">
+                <h4 class="footer__title">Atendimento</h4>
                 <p>Central de atendimento 24h</p>
                 <p>
-                    <span class="material-symbols-outlined">call</span>
+                    <span class="footer__icon  material-symbols-outlined">call</span>
                     00 0000-0000
-                </p>
                 <p>Fale conosco por e-mail</p>
-                <p role="email">
-                    <span class="material-symbols-outlined">mail</span>
+                <a class="footer__link" href="mailto:exemplo@petround.com.br?subject=Olá Petround!">
+                    <span class="footer__icon  material-symbols-outlined">mail</span>
                     exemplo@petround.com.br
-                </p>
+                </a>
             </section>
-
-            <section class="otherMidia">
-                <div class="socialUs">
-                    <h4>Midias Sociais</h4>
-                    <a href="#" class="fa fa-facebook" tabindex="0"></a>
-                    <a href="#" class="fa fa-linkedin" tabindex="0"></a>
-                    <a href="#" class="fa fa-instagram" tabindex="0"></a>
-                    <a href="#" class="fa fa-pinterest" tabindex="0"></a>
+            <section class="footer__container  footer__container--external-link">
+                <div>
+                    <h4 class="footer__title">Midias Sociais</h4>
+                    <a href="#" class="footer__social-media fa fa-facebook" tabindex="0"></a>
+                    <a href="#" class="footer__social-media fa fa-linkedin" tabindex="0"></a>
+                    <a href="#" class="footer__social-media fa fa-instagram" tabindex="0"></a>
+                    <a href="#" class="footer__social-media fa fa-pinterest" tabindex="0"></a>
                 </div>
-                <div class="appUS">
-                    <h4>Versão mobile</h4>
-                    <button href="#" tabindex="0"><img width="120" src="Assets/Footer/app_appStore.png"></button>
-                    <button href="#" tabindex="0"><img width="120" src="Assets/Footer/app_playStore.png"></button>
+                <div class="footer__group-app">
+                    <h4 class="footer__title">Versão mobile</h4>
+                    <a href="#" tabindex="0"><img class="footer__mobile-app footer__img" src="Assets/Footer/app_appStore.png"></a>
+                    <a href="#" tabindex="0"><img class="footer__mobile-app footer__img" src="Assets/Footer/app_playStore.png"></a>
                 </div>
             </section>
-
-
-
-            <!--
-            <section class="appUS">
+            <section class="footer__container  footer__container--payments">
+                <h4 class="footer__title">Formas de pagamento </h4>
+                <img class="footer__payment-icon footer__img" src="Assets/Footer/payment_0000_1.png" tabindex="0" />
+                <!-- <img height="35" src="Assets/Footer/payment_0001_2.png" /> -->
+                <img class="footer__payment-icon footer__img" src="Assets/Footer/payment_0002_3.png" tabindex="0" />
+                <img class="footer__payment-icon footer__img" src="Assets/Footer/payment_0003_4.png" tabindex="0" />
+                <img class="footer__payment-icon footer__img" src="Assets/Footer/payment_0004_5.png" tabindex="0" />
+                <img class="footer__payment-icon footer__img" src="Assets/Footer/payment_0005_6.png" tabindex="0" />
+                <img class="footer__payment-icon footer__img" src="Assets/Footer/payment_0006_7.png" tabindex="0" />
+                <img class="footer__payment-icon footer__img" src="Assets/Footer/payment_0007_8.png" tabindex="0" />
+                <!-- <img height="35" src="Assets/Footer/payment_0008_9.png" /> -->
+                <img class="footer__payment-icon footer__img" src="Assets/Footer/payment_0009_10.png" tabindex="0" />
+                <img class="footer__payment-icon footer__img" src="Assets/Footer/payment_0011_12.png" tabindex="0" />
+                <img class="footer__payment-icon footer__img" src="Assets/Footer/payment_0010_11.png" tabindex="0" />
+                <img class="footer__payment-icon footer__img" src="Assets/Footer/payment_0012_13.png" tabindex="0" />
+            </section>
+            <section class="footer__container  footer__container--about">
+                <h4 class="footer__title">Sobre o projeto </h4>
+                <a class="footer__link" href="#" tabindex="0"> Criador do projeto</a>
+                <a class="footer__link" href="#" tabindex="0"> Tecnologias ultilizadas</a>
+                <a class="footer__link" href="#" tabindex="0"> Referências</a>
+                <p>©Vigorzzerotm - 2023</p>
+            </section>
+            <!-- <section class="appUS">
                 <h4>Tecnologias ultilizadas</h4>
                 <img width="80" height="25"
                     src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
@@ -349,56 +376,8 @@
                     src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white">
                 <img width="80" height="25"
                     src="https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white">
-            </section>
-
-        -->
-
-
-            <section class="payments">
-                <h4>Formas de pagamento </h4>
-                <img height="35" src="Assets/Footer/payment_0000_1.png" tabindex="0" />
-                <!-- <img height="35" src="Assets/Footer/payment_0001_2.png" /> -->
-                <img height="35" src="Assets/Footer/payment_0002_3.png" tabindex="0" />
-                <img height="35" src="Assets/Footer/payment_0003_4.png" tabindex="0" />
-                <img height="35" src="Assets/Footer/payment_0004_5.png" tabindex="0" />
-                <img height="35" src="Assets/Footer/payment_0005_6.png" tabindex="0" />
-                <img height="35" src="Assets/Footer/payment_0006_7.png" tabindex="0" />
-                <img height="35" src="Assets/Footer/payment_0007_8.png" tabindex="0" />
-                <!-- <img height="35" src="Assets/Footer/payment_0008_9.png" /> -->
-                <img height="35" src="Assets/Footer/payment_0009_10.png" tabindex="0" />
-                <img height="35" src="Assets/Footer/payment_0011_12.png" tabindex="0" />
-                <img height="35" src="Assets/Footer/payment_0010_11.png" tabindex="0" />
-                <img height="35" src="Assets/Footer/payment_0012_13.png" tabindex="0" />
-            </section>
-
-
-
-            <section class="aboutME">
-                <h4>Sobre o projeto </h4>
-                <a href="#" tabindex="0"> Criador do projeto</a>
-                <br>
-                <a href="#" tabindex="0"> Tecnologias ultilizadas</a>
-                <br>
-                <a href="#" tabindex="0"> Referências</a>
-                <p>&copy;Vigorzzerotm - 2023</p>
-            </section>
-
-
-
+            </section> -->
         </div>
     </footer>
-
-
-
-
-    <button class="gocymer gocymerred">CLIQUE AQUI</button>
-    <button class="gocymer gocymergreen">CLIQUE AQUI</button>
-    <button class="gocymer gocymerthree">CLIQUE AQUI</button>
-
-    <button class="gocymer gocymertwo">CLIQUE AQUI</button>
-    <button class="gocymer gocymertwo gocymeryellow">CLIQUE AQUI</button>
-    <button class="gocymer gocymerthree">CLIQUE AQUI</button>
-
 </body>
-
 </html>
