@@ -15,13 +15,28 @@ Oganization Notes
     }
 */
 
+/*
+CSS Features used 
+- Method BEM
+- Global Vars
+- Shorthand_properties
+-- :hover
+-- -webkit-background-clip
+-- linear-gradient
+-- calc()
+-- transitions
+-- transform
+*/
+
 @font-face {
     font-family: Margarine-Regular;
     src: url(Assets/Margarine-Regular.ttf);
 }
 
 *{
-    --gradient-red: linear-gradient(to top, var(--red-weight) 50%, var(--red-soft));
+    --gradient-red-weight: linear-gradient(to top, var(--red-weight) 50%, var(--red-soft));
+    --gradient-red-linear: linear-gradient(to top, var(--red-weight), var(--red-soft));
+
     --red-weight: #A83E3E;
     --red-soft: #F47373;
     --link: #4d4d4d;
@@ -42,9 +57,7 @@ Oganization Notes
     justify-content: space-evenly;
 
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    inset: 0 0 auto 0;
     z-index: 3;
 
     padding: 40px 0px 27px;
@@ -88,9 +101,11 @@ Oganization Notes
         margin: auto 0px;
     }
 
-    .header-top__icon-base {
+    .header-top__icon-area {
         margin-left: 14px;
+    }
 
+    .header-top__icon-base {
         background-image: linear-gradient(to top, var(--red-weight) 50%, var(--red-soft) 50%);
         background-clip: text;
         -webkit-background-clip: text;
@@ -138,6 +153,19 @@ Oganization Notes
             margin-left: 12px;
         }
 
+        .header-down__item--menu {
+            padding: 10px 0px 10px 10px;
+            margin-top: -10px; /*HACK HERE*/
+            transition: 0.4s;
+        }
+
+
+
+        .header-down__item--menu:hover {
+            cursor: pointer;
+            color: var(--red-weight);
+        }
+
         .header-down__icon-arrow {
             font-size: 18px;
             vertical-align: middle;
@@ -148,11 +176,6 @@ Oganization Notes
             margin-right: 10px;
             vertical-align: top;
 
-        }
-
-        .header-down__item--menu:hover {
-            cursor: pointer;
-            color: var(--red-weight);
         }
 
         .header-down__container-parent:hover .header-down__list-menu--parent,
@@ -178,8 +201,7 @@ Oganization Notes
         }
 
         .header-down__list-menu--parent {
-            top: 36px;
-            left: -15px;
+            inset: 36px auto auto -15px; /*HACK HERE*/
 
             opacity: 0;
             visibility: hidden;
@@ -188,7 +210,7 @@ Oganization Notes
 
         .header-down__list-menu--child {
             left: 180px;
-            margin-top: -32.5px;
+            margin-top: -32.5px;  /*HACK HERE*/
 
             opacity: 0;
             visibility: hidden;
@@ -237,19 +259,14 @@ Oganization Notes
     .carrosel__btn {
         margin: auto 0px;
         height: fit-content;
-        padding: 0px 15px 6px;
+        padding: 10px;
 
         border: none;
         background: #f47373a8;
         border-radius: 50%;
-
-        color:white;
-        font-size: xx-large;
-        font-weight: bolder;
-
         transition: 300ms;
     }
-
+    
     .carrosel__btn:hover {
         background-color: var(--red-weight);
         cursor: pointer;
@@ -261,6 +278,11 @@ Oganization Notes
 
     .carrosel__btn--right {
         margin-right:40px;
+    }
+
+    .carrosel__icon-arrow {
+        color:white;
+        font-size: xx-large;
     }
 
     .carrosel__img {
@@ -278,7 +300,7 @@ Oganization Notes
     margin: auto 0px auto 80px;
     width: 57%;
     padding: 20px 50px;
-    background: var(--gradient-red);
+    background: var(--gradient-red-linear);
     border-radius: 50%;
 
     color: white;
@@ -298,9 +320,7 @@ Oganization Notes
 
     .box-circle__item--emphasis {
         margin: 20px 0px 0px;
-
-        font-size: 30px;
-        font-family: Margarine-Regular;
+        font: 30px Margarine-Regular;
     }
 
     .box-circle__item--small {
@@ -310,16 +330,14 @@ Oganization Notes
 
     .box-circle__item--button {
         position: absolute;
-        top: 20px;
-        right: 25%;
+        inset: 20px 25% auto auto;
 
         width: 190px;
         padding: 15px;
         background: var(--red-weight);
         border-radius: 10px;
 
-        font-size: 20px;
-        font-family: Margarine-Regular;
+        font: 20px Margarine-Regular;
         letter-spacing: 5px;
     }
 /*
@@ -363,13 +381,11 @@ Oganization Notes
     }
 
     .banner__img--picture1 {
-        top: 20px;
-        right: 60px;
+        inset: 20px 60px auto auto;
     }
 
     .banner__img--picture2 {
-        top: 40px;
-        right: 45px;
+        inset: 40px 45px auto auto;
     }
 /*
 
@@ -397,7 +413,7 @@ Oganization Notes
 
     .section-pets__container:hover {
         color: rgb(245, 245, 245);
-        cursor:pointer;
+        cursor: pointer;
         box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
     }
 
@@ -450,7 +466,7 @@ Oganization Notes
         width: 140px;
 
         border-bottom: none;
-        background: linear-gradient(to top, var(--red-weight) 50%, var(--red-soft));
+        background: var(--gradient-red-weight);
     }
 
     .product__picture {
@@ -460,12 +476,12 @@ Oganization Notes
         max-width: 180px;
         max-height: 180px;
         padding: 20px 0px;
+        background: no-repeat center;
         background-size: 90%;
-        background-position: center;
-        background-repeat: no-repeat;
     }
 
     .product__picture--01 {
+
         background-image: url("Assets/Store/Product5.jpg");
     }
 
@@ -513,8 +529,7 @@ Oganization Notes
     }
 
         .product__price {
-            font-size: 22px;
-            font-weight: normal;
+            font: 22px normal;
         }
 
         .product__cents {
@@ -528,8 +543,7 @@ Oganization Notes
         }
 
         .product__star-icon {
-            color: transparent;
-            text-shadow: 0 0 0 var(--red-weight);
+            vertical-align: bottom;
         }
 
         .product__description {
@@ -557,12 +571,11 @@ Oganization Notes
 
     }
     .product__banner-title {
-        font-size: 24px;
-        font-family: Margarine-Regular;
+        font: 24px Margarine-Regular;
     }
 
     .store__services .product__description {
-        width: 200px;
+        width: 120px;
     }
     .product__banner-button{
         margin: 0px auto 20%;
@@ -607,8 +620,7 @@ Oganization Notes
 
     .get-news__label {
         position: absolute;
-        top: 12px;
-        left: 14px;
+        inset: 12px auto auto 14px;
 
         color: rgb(80, 80, 80);
         letter-spacing: 1px;
@@ -621,6 +633,7 @@ Oganization Notes
         max-width: 300px;
         border: none;
         border-radius: 10px;
+
         font-size: 16px;
     }
 
@@ -646,35 +659,41 @@ Oganization Notes
 
 */
 footer {
-    padding-top: 30px;
     margin-top: 100px;
-    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);
+    padding-top: 30px;
     background-color: rgba(0,0,0,0.03);
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);
+
 }
 
     .footer__container-group {
-        width: fit-content;
-        margin: 0px auto;
         display: grid;
         grid-template-areas: 
-        "aboutUs contactUS otherMidia payments aboutME" 
-    /* "aboutUs contactUS otherMidia aboutME" */
-    /* "aboutUs payments otherMidia aboutME" */
+        "aboutUs contactUS otherMidia payments aboutME";
+        /* "aboutUs contactUS otherMidia aboutME" */
+        /* "aboutUs payments otherMidia aboutME"; */
+
+        margin: 0px auto;
+        width: fit-content;
     }
 
     .footer__container {
         display:inline-block;
+        
         margin: 20px 20px;
-        vertical-align:middle; /* top ord middle? */
+        vertical-align: middle; /* top ord middle? */
     }
 
     .footer__container--meet-project {
         grid-area: aboutUs;
+
         width: 200px;
-        color: white;
         padding: 30px 50px 50px;
-        border-radius: 20px;
         background-color: var(--red-weight);
+        border-radius: 20px;
+
+        color: white;
+
     }
 
     .footer__container--contact {
@@ -682,9 +701,9 @@ footer {
     }
 
     .footer__container--external-link {
-        width: 260px;
         grid-area: otherMidia;
         position: relative;
+        width: 260px;
     }
 
     .footer__container--payments {
@@ -697,21 +716,23 @@ footer {
     }
     
     .footer__social-media {
-        color: white;
-        background: black;
-        padding: 10px 0px;
-        font-size: 25px;
+        position: absolute;
+
         width: 50px;
+        padding: 10px 0px;
+        background: black;
+        border-radius: 100%;
+        
+        color: white;
+        font-size: 25px;
         text-align: center;
         text-decoration: none;
-        border-radius: 100%;
-        position: absolute;
         transition: 200ms;
     }
     
     .footer__social-media:hover {
         padding: 12px 0px;
-        opacity:0.8 !important;
+        opacity: 0.8;
     }
 
     .footer__social-media.fa-facebook {
@@ -727,6 +748,7 @@ footer {
         left: 110px;
         background: linear-gradient(45deg, rgb(255, 145, 0), rgb(207, 0, 197));
     }
+
     .footer__social-media.fa-pinterest {
         left: 165px;
         background: #cb2027;
