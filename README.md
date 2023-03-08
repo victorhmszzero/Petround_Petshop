@@ -34,7 +34,7 @@
     
    <img src="Assets/zHome.jpg" width="45%" />
    <img src="Assets/zStore.jpg" width="45%" />
-   <img src="https://previews.dropbox.com/p/thumb/AB22fJetvNWAUaSzBn2wc4cEWMrkye-l6f8R_7yivRtmKWD_0YFvoGNkF_RBc-Li8SAzrQfdUaT00gm3KV7UOPVPAu-HtKRrEOsPDvjLRI1dafX7ykCQRhdWsGfmXib57qymXZq_Ztq0hiE9ThdYcdSM_gpRVI7NZ6B5ZqqjT67oW-wtwJbofajSRbJy4pN5W6fwx8xoFGSdBOEvx0rHyt3fXdKpdzRKkkIGxfHPYWyxYkhsS21clYuQ7j-re0pRXqBeRmZaX3g9hP1X8RX5ACALMk3vmv-eQjBTrFHSqDrDUneVsTEZPsEuZ5WUQAxEiDBbhQDZNN9jhzNdiUmyLyASrut0OZEqtYQ6HeG5PakPucNT-V_xQcWxc3gD-qbeRBjiWJQAQ10aukv6HzlYbfv4/p.png">
+   <img src="https://raw.githubusercontent.com/victorhmszzero/Petround_Petshop/main/Site%20Pages%20-%20Figma/Figma.png">
  </section>
  <section>
   
