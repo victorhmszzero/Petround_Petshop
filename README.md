@@ -34,6 +34,11 @@
     
    <img src="Assets/zHome.jpg" width="45%" />
    <img src="Assets/zStore.jpg" width="45%" />
+   
+   <br>
+  
+  ### Figma Atualização
+  
    <img src="https://raw.githubusercontent.com/victorhmszzero/Petround_Petshop/main/Site%20Pages%20-%20Figma/Figma.png">
  </section>
  <section>
